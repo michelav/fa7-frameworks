@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Syllabus
-permalink: /syllabus/
+title: Course info
+permalink: /course-info/
 ---
 **Name, Instructor**
 
@@ -18,7 +18,7 @@ By the end of this course student will
   * 
   * 
 
-## Course Structure
+## Overview
 
 Overview of approach, regular class activities and assignments.
 
