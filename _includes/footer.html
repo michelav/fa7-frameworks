@@ -1,38 +1,22 @@
 <footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1 text-center">
+        <div class="row">
+	  <div class="col-sm-3 col-xs-12">
+	    <!-- email link here -->
+	  </div>
+      <div class="col-sm-3 col-xs-12">
+        <!-- put Twitter follow icon here -->
       </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
+	  <div class="col-sm-3 col-xs-12">
+        <!-- put your own counter here -->
+	  </div>
+	  <div class="col-sm-12">
+	    <div>{{ site.description }}</div>
+	  </div>
+        </div>
       </div>
     </div>
-
   </div>
-
 </footer>
