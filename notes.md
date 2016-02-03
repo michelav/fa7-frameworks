@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Notes and presentations
+title: Notes
 permalink: /notes/
 ---
 
