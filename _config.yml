@@ -23,3 +23,8 @@ markdown: kramdown
 # pagination
 paginate: 5
 paginate_path: "page:num"
+
+# Collections
+collections:
+  presentations:
+    output: true
