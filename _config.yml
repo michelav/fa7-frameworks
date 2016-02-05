@@ -6,12 +6,12 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Course title
-email: your-email@domain.com
+title: Web Projects
+email: kegan@risd.edu
 description: > # this means to ignore newlines until "baseurl:"
-  Name, Instructor &bull; Course Number, Semester &bull; Day, Time
+  Kelly Egan, Instructor &bull; Photo‐5345, Spring 2016 &bull; Thurs., 1 &ndash; 6pm
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://web-projects-course.github.io" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 gems: [jekyll-paginate]
