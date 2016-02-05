@@ -6,7 +6,6 @@ theme: black
 transition: slide
 ---
 
-
 <section data-markdown>
 ##Welcome to "Course title"
 
