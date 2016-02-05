@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Week 1: Welcome to course title!"
+date:   2016-01-20 20:25:14 -0500
+categories: week
+---
+
+This is my template for a course website, using [Jekyll](https://github.com/jekyll/jekyll), [Bootstrap](http://getbootstrap.com/) and [Reveal.js](http://lab.hakim.se/reveal-js/). 
+
+I use Jekyll for site generation, Bootstrap for layout and Reveal.js for creating slide presentations for the class. I left most fields generic so I (or anyone) can create new course sites in the future.
+
+Since Jekyll is a static-site generator, it is ideal for sites that will mostly provide information rather than have multiple contributors and comments. Although commenting can be added with outside services like [Disqus](https://disqus.com/).
+
