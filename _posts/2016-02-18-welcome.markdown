@@ -1,13 +1,16 @@
 ---
 layout: post
-title:  "Week 1: Welcome to course title!"
+title:  "Week 1: Welcome to Web Projects!"
 date:   2016-01-20 20:25:14 -0500
 categories: week
 ---
 
-This is my template for a course website, using [Jekyll](https://github.com/jekyll/jekyll), [Bootstrap](http://getbootstrap.com/) and [Reveal.js](http://lab.hakim.se/reveal-js/). 
+This is the course website for the RISD Photo Department's Spring 2016 section of Web Projects. 
 
-I use Jekyll for site generation, Bootstrap for layout and Reveal.js for creating slide presentations for the class. I left most fields generic so I (or anyone) can create new course sites in the future.
+This site will serve as a digital syllabus for the course as well as a discussion space and reference for the class.
 
-Since Jekyll is a static-site generator, it is ideal for sites that will mostly provide information rather than have multiple contributors and comments. Although commenting can be added with outside services like [Disqus](https://disqus.com/).
+### What is here:
+  * [Course info](/course-info) - List course objects, content and policies.
+  * [Resources](/resources) - Tools and reference materials needed to succeed in the class.
+  * [Schedule](/schedule) - List of weekly topics and assignment due dates.
 
