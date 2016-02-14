@@ -16,6 +16,12 @@ Thurs., 1 – 6pm
 
 <section>
 
+Kelly Egan, kegan@risd.edu
+
+</section>
+
+<section>
+
 <h2>Objectives</h2>
 
 <p class="fragment">By the end of this course you will...</p>
