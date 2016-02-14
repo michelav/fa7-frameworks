@@ -7,39 +7,90 @@ transition: slide
 ---
 
 <section data-markdown>
-##Welcome to "Course title"
+##Welcome to Web Projects
 
-This is a overview of what we will be doing this semester.
+Photo‐5345, Spring 2016
+
+Thurs., 1 – 6pm
+</section>
+
+<section>
+
+<h2>Objectives</h2>
+
+<p class="fragment">By the end of this course you will...</p>
+
 </section>
 
 <section data-markdown>
-##Objectives
 
-  * Objective 1
-  * Objective 2
-  * Objective 3    
+...create sophisticated web-based work  
+using HTML, CSS and Javascript
+
 </section>
 
 <section data-markdown>
-##Objective 1
+   
+...be able to speak clearly about web-based work, placing it in the context of internet art and culture
 
-More detail on objectives   
 </section>
 
 <section data-markdown>
-##Objective 2
+  
+...develop skills for learning new technologies  
+through community and individual effort
 
-More detail on objectives   
+</section>
+
+<section>
+  
+## Semester at a glance
+
 </section>
 
 <section data-markdown>
-##Objective 3
+  
+## Average week
 
-More detail on objectives   
 </section>
 
+<section data-markdown>
+  
+## Average class
+
+</section>
 
 <section data-markdown>
+
 ## Grading
+  
+</section>
+
+<section data-markdown>
+
+## Attendance
+  
+</section>
+
+<section data-markdown>
+
+## Plagerism
+  
+</section>
+
+<section data-markdown>
+
+## Required materials and tools
+ 
+* Laptop
+* Adobe Brackets
+* GitHub
+* Slack
+  
+</section>
+
+<section data-markdown>
+
+http://web-projects-course.github.io/course-info
   
 </section>
