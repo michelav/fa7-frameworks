@@ -178,6 +178,19 @@ transition: slide
 </section>
 
 <section>
+  <p>One last comment...</p>
+  
+  
+  <div class="fragment">
+    <p>HTML has comments</p>
+    <code class="hljs html xml">
+     <span class="hljs-tag fragment">&lt;!--</span><span class="hljs-title fragment"> Comment goes here. </span><span class="hljs-tag fragment">--&gt;</span>
+    </code>
+  </div> 
+  <p class="fragment">Use them to document your work without making it visible on the final webpage.</p> 
+</section>
+
+<section>
   <h2>Ready to try?</h2>
   <p>Link to in-class exercise</p>
   <p><a href="http://www.w3schools.com/">http://www.w3schools.com/</a></p>
