@@ -6,9 +6,9 @@ theme: black
 transition: slide
 ---
 
-<section data-markdown>
+<section>
 
-## Introduction to HTML
+  <h2>Introduction to HTML</h2>
 
 </section>
 
