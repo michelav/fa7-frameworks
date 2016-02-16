@@ -2,7 +2,7 @@
 layout: presentation
 title: Course introduction
 description: A look at the objects and structure of the course
-theme: black
+theme: zerozerozero
 transition: slide
 ---
 
@@ -50,7 +50,9 @@ through community and individual effort
 
 <section>
   
-## Semester at a glance
+<h2>Semester at a glance</h2>
+
+<img src="/media/20160215_semester_overview.svg" class="plain">
 
 </section>
 
@@ -66,9 +68,11 @@ through community and individual effort
 
 </section>
 
-<section data-markdown>
+<section>
 
-## Grading
+<h2>Grading</h2>
+
+<img src="/media/20160215_grade_pie.svg" alt="Pie chart showing grades" class="plain"> 
   
 </section>
 

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-339 251 900 300" style="enable-background:new -339 251 900 300;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{font-family:'HelveticaNeue-Medium';}
+	.st2{font-size:20.5615px;}
+	.st3{fill:#9E9E9E;}
+	.st4{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+	.st5{fill:#FFBE57;}
+	.st6{fill:none;}
+	.st7{font-size:28px;}
+</style>
+<g id="Background_1_">
+	<g id="Background">
+		<rect x="-339" y="250" width="900" height="300"/>
+	</g>
+</g>
+<g id="Layer_2">
+</g>
+<g id="Layer_3">
+	<text transform="matrix(0.6572 -0.7537 0.7537 0.6572 -162.5852 399.8861)" class="st0 st1 st2">Project 1</text>
+	<text transform="matrix(0.6572 -0.7537 0.7537 0.6572 -99.4924 399.8857)" class="st0 st1 st2">Project 2</text>
+	<text transform="matrix(0.6572 -0.7537 0.7537 0.6572 24.8717 399.592)" class="st0 st1 st2">Project 3</text>
+	<text transform="matrix(0.6572 -0.7537 0.7537 0.6572 90.4489 399.5923)" class="st3 st1 st2">Spring break</text>
+	<text transform="matrix(0.6572 -0.7537 0.7537 0.6572 150.4975 399.5912)" class="st0 st1 st2">Project 4</text>
+	<text transform="matrix(0.6572 -0.7537 0.7537 0.6572 456.3864 399.5914)" class="st0 st1 st2">Final project</text>
+	<line class="st4" x1="-300.4" y1="416.9" x2="448.6" y2="416.9"/>
+	<g>
+		<circle class="st0" cx="-300.4" cy="416.9" r="7.8"/>
+		<circle class="st0" cx="-238" cy="416.9" r="7.8"/>
+		<circle class="st5" cx="-175.6" cy="416.9" r="7.8"/>
+		<circle class="st5" cx="-113.2" cy="416.9" r="7.8"/>
+		<circle class="st0" cx="-50.8" cy="416.9" r="7.8"/>
+		<circle class="st5" cx="11.7" cy="416.9" r="7.8"/>
+		<circle class="st3" cx="74.1" cy="416.9" r="7.8"/>
+		<circle class="st5" cx="136.5" cy="416.9" r="7.8"/>
+		<circle class="st0" cx="198.9" cy="416.9" r="7.8"/>
+		<circle class="st0" cx="261.3" cy="416.9" r="7.8"/>
+		<circle class="st0" cx="323.7" cy="416.9" r="7.8"/>
+		<circle class="st0" cx="386.2" cy="416.9" r="7.8"/>
+		<circle class="st5" cx="448.6" cy="416.9" r="7.8"/>
+	</g>
+	<rect x="-299" y="456" class="st6" width="375" height="40"/>
+	<text transform="matrix(1 0 0 1 -262.9365 475.9922)" class="st0 st1 st7">HTML, CSS, JavaScript</text>
+	<rect x="74.1" y="456" class="st6" width="374.8" height="29"/>
+	<text transform="matrix(1 0 0 1 253.6677 475.9922)" class="st0 st1 st7">?</text>
+</g>
+</svg>
