@@ -56,15 +56,25 @@ through community and individual effort
 
 </section>
 
-<section data-markdown>
+<section>
   
-## Average week
+<h2>Average week</h2>
+
+<img src="/media/20160215_week.svg" class="plain">
 
 </section>
 
-<section data-markdown>
+<section>
   
-## Average class
+<h2>Average class</h2>
+
+<ul>
+  <li class="fragment">Show and tell</li>
+  <li class="fragment">Looking at art/artists/designers</li>
+  <li class="fragment">Critique</li>
+  <li class="fragment">Demos (short)</li>
+  <li class="fragment">Group exercises (longer)</li>
+</ul>
 
 </section>
 
