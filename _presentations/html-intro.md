@@ -30,6 +30,13 @@ transition: slide
 
 <section>
   <h2>Markup</h2>
+</section>
+
+<section>
+  <img src="/media/larson_clearsthingup.jpg" alt="Man marks up belongings.">
+</section>
+
+<section>
   <p class="fragment">We use <strong>tags</strong> to <em>markup</em> <strong>content.</strong></p>
 </section>
 
