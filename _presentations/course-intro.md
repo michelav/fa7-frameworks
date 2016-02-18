@@ -143,8 +143,51 @@ Kelly Egan, kegan@risd.edu
   
 </section>
 
+<section>
+  <section>
+    <h1>Metaphor</h1>
+  </section>
+  
+  <section>
+    <img src="/media/button.jpg" alt="A button">
+  </section>
+  
+  <section>
+    <img src="/media/window.jpg" alt="A window">
+  </section>
+  
+  <section>
+    <img src="/media/gallery.jpg" alt="Woman in a gallery">
+  </section>
+  
+  <section>
+    <img src="/media/tree.jpg" alt="A tree">
+  </section>
+  
+  <section>
+    <img src="/media/theInternetIs.jpg" alt="Googgle search for the internet is">
+  </section>
+  
+  <section>
+    <img src="/media/highway.jpg" alt="Highway interchange">
+  </section>
+  
+  <section>
+    <img src="/media/rafman_west.jpg" alt="Desert with cowboy">
+  </section>
+  
+  <section>
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/f99PcP0aFNE" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section>
+    <iframe width="640" height="360" src="http://www.democracynow.org/embed/story/2013/1/14/freedom_to_connect_aaron_swartz_1986" frameborder="0" allowfullscreen="true"></iframe>
+  </section>
+  
+</section>
+
 <section data-markdown>
 
-http://web-projects-course.github.io/course-info
+http://web-projects-course.github.io
   
 </section>
