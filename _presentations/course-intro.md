@@ -149,6 +149,10 @@ Kelly Egan, kegan@risd.edu
   </section>
   
   <section>
+    <img src="/media/theInternetIs.jpg" alt="Googgle search for the internet is">
+  </section>
+  
+  <section>
     <img src="/media/button.jpg" alt="A button">
   </section>
   
@@ -162,10 +166,6 @@ Kelly Egan, kegan@risd.edu
   
   <section>
     <img src="/media/tree.jpg" alt="A tree">
-  </section>
-  
-  <section>
-    <img src="/media/theInternetIs.jpg" alt="Googgle search for the internet is">
   </section>
   
   <section>
