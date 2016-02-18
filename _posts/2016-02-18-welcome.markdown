@@ -9,6 +9,10 @@ This is the course website for the RISD Photo Department's Spring 2016 section o
 
 This site will serve as a digital syllabus for the course as well as a discussion space and reference for the class.
 
+To start off it please fill out this survey. It will help me plan the course:
+
+[Survey](https://docs.google.com/a/risd.edu/forms/d/1R-aRtr3wSPJcvrG22h8CtE2wZBLEOzCcsbjIexJIXOs/edit?usp=drive_web)
+
 ### What is here:
   * [Course info](/course-info) - List course objects, content and policies.
   * [Resources](/resources) - Tools and reference materials needed to succeed in the class.
