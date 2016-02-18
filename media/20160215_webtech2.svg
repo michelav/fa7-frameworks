@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-239 213 800 375" style="enable-background:new -239 213 800 375;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFBE57;}
+	.st1{font-family:'HelveticaNeue-Medium';}
+	.st2{font-size:58.2786px;}
+	.st3{font-size:44.8506px;}
+	.st4{font-size:35.3583px;}
+	.st5{fill:#FFFFFF;}
+	.st6{font-size:24px;}
+	.st7{font-size:27.2664px;}
+	.st8{font-size:22.085px;}
+	.st9{font-size:29.6818px;}
+	.st10{font-size:25.98px;}
+	.st11{font-size:23.3538px;}
+	.st12{font-size:25.8193px;}
+</style>
+<g id="Layer_1">
+	<g id="Layer_2">
+		<rect x="-239" y="213" width="800" height="375"/>
+	</g>
+	<text transform="matrix(1 0 0 1 72.5014 381.5981)" class="st0 st1 st2">HTML</text>
+	<text transform="matrix(1 0 0 1 14.6196 433.0137)" class="st0 st1 st3">CSS</text>
+	<text transform="matrix(1 0 0 1 123.3061 430.3086)" class="st0 st1 st4">JavaScript</text>
+</g>
+<g id="Layer_2_1_">
+	<text transform="matrix(1 0 0 1 328.208 436.6988)" class="st5 st1 st6">D3.js</text>
+	<text transform="matrix(1 0 0 1 -53.5493 468.0625)" class="st5 st1 st7">APIs</text>
+	<text transform="matrix(1 0 0 1 73.6514 312.0551)" class="st5 st1 st8">SASS</text>
+	<text transform="matrix(1 0 0 1 54.872 280)" class="st5 st1 st6">WebVR</text>
+	<text transform="matrix(1 0 0 1 316.9542 392.8691)" class="st5 st1 st9">Jekyll</text>
+	<text transform="matrix(1 0 0 1 -62.1182 369)" class="st5 st1 st6">Bootstrap</text>
+	<text transform="matrix(1 0 0 1 105.5918 518.6963)" class="st5 st1 st10">WordPress</text>
+	<text transform="matrix(1 0 0 1 -33.6882 322.6964)" class="st5 st1 st6">Drupal</text>
+	<text transform="matrix(1 0 0 1 1.0876 509.6963)" class="st5 st1 st6">Apps</text>
+	<text transform="matrix(1 0 0 1 199.603 479.7549)" class="st5 st1 st11">Processing.js</text>
+	<text transform="matrix(1 0 0 1 -92.5923 413.8672)" class="st5 st1 st12">JQuery</text>
+	<text transform="matrix(1 0 0 1 168.7259 303.4996)" class="st5 st1 st6">Internet of Things</text>
+	<text transform="matrix(1 0 0 1 31.2795 472.7549)" class="st5 st1 st6">Responsive</text>
+	<text transform="matrix(1 0 0 1 254.6724 349.0002)" class="st5 st1 st6">WebGL</text>
+</g>
+</svg>

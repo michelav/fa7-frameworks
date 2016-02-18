@@ -28,24 +28,58 @@ Kelly Egan, kegan@risd.edu
 
 </section>
 
-<section data-markdown>
 
-...create sophisticated web-based work  
-using HTML, CSS and Javascript
-
-</section>
-
-<section data-markdown>
-   
-...be able to speak clearly about web-based work, placing it in the context of internet art and culture
-
-</section>
-
-<section data-markdown>
+<section>
+  <section data-markdown>
+  ...create sophisticated web-based work  
+  using HTML, CSS and Javascript
+  </section>
   
-...develop skills for learning new technologies  
-through community and individual effort
+  <section>
+    <img src="/media/20160215_webtech.svg" alt="HTML, CSS, JavaScript">
+  </section> 
+  
+  <section>
+    <img src="/media/20160215_webtech2.svg" alt="HTML, CSS, JavaScript">    
+  </section> 
+  
+</section>
 
+<section>
+  <section data-markdown> 
+  ...be able to speak clearly about web-based work, placing it in the context of internet art and culture
+  </section>
+  
+  <section>
+    <img src="/media/Engelbart_MotherOfAllDemos.jpg" alt="">
+  </section>
+  
+  <section>
+    <img src="/media/Valla_PostcardsFromGoogleEarth.jpg" alt="Clement Valla, Postcards from Google Earth">
+  </section>
+  
+  <section>
+    <img src="/media/Kazemi_HottestStartup.jpg"  alt="Darius Kazemi's Twitter bot Hottest Startup">
+  </section>
+  
+  <section>
+    <img src="http://2.bp.blogspot.com/-WAUYXoObi8g/Uzo7-Qvs1aI/AAAAAAAAAQo/4D1LyuKwfTA/s1600/nexus5_chrome_emojis.gif"  alt="Darius Kazemi's Twitter bot Hottest Startup">
+  </section>
+</section>
+
+<section>
+  <section data-markdown>  
+  ...develop skills for learning new technologies  
+  through community and individual effort 
+  </section>
+  
+  <section>
+  <ul>
+    <li class="fragment">In class exercises</li>
+    <li class="fragment">Pair programming</li>
+    <li class="fragment">Online conversation (Slack)</li>
+  </ul>
+  </section>
 </section>
 
 <section>
