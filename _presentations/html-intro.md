@@ -192,6 +192,6 @@ transition: slide
 
 <section>
   <h2>Ready to try?</h2>
-  <p>Link to in-class exercise</p>
+  <p><a href="https://github.com/Web-Projects-Course/html-in-class-exercise">https://github.com/Web-Projects-Course/html-in-class-exercise</a></p>
   <p><a href="http://www.w3schools.com/">http://www.w3schools.com/</a></p>
 </section>
