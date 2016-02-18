@@ -35,6 +35,14 @@
     <!-- Code syntax highlighting -->
     <link rel="stylesheet" href="{{ "/reveal_js/lib/css/zenburn.css" | prepend: site.baseurl }}"/>
 
+    <style type="text/css">
+      a.home-link {
+        color: #646464;
+        font-size: 0.8em;
+      }    
+    </style>   
+
+   
     <!-- Printing and PDF exports -->
     <script>
       var link = document.createElement( 'link' );
@@ -59,7 +67,7 @@
     <div class="reveal">
 
       <div class="slides">
-        <small><a href="/">{{ site.title }}</a></small>
+        <small><a href="/" class="home-link">{{ site.title }}</a></small>
         {{ content }}
       </div>
     </div>
