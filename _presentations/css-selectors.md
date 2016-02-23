@@ -1,6 +1,6 @@
 ---
 layout: presentation
-title: Introduction to CSS
+title: Introduction to CSS selectors
 description: The basics of CSS structure
 theme: black
 transition: slide
@@ -116,7 +116,7 @@ h1 {
 </section>
 
 <section>
-  <p>A class can be selected by placing a period before the name of the class.</p>
+  <p>A class can be selected by placing a period<br> before the name of the class.</p>
   
   <div class="fragment">
     <pre><code class="css" data-trim contenteditable>
@@ -149,7 +149,7 @@ h1 {
     <pre><code class="css" data-trim contenteditable>
     h2.important { text-decoration: underline }
     </code></pre>
-    <p>This would select any <code>&lt;h2&gt;</code> with a class of "important"</p>
+    <p>This selects any <code>&lt;h2&gt;</code> with a class of "important"</p>
     <pre><code class="html" data-trim contenteditable>
     <h2 class="important">An important heading</h2>
     </code></pre>
@@ -165,3 +165,75 @@ h1 {
   <p class="fragment"><em>Rule of thumb:</em> Use classes.</p>
 </section>
 
+<section>
+  <p>Selectors can be combined with commas:</p>
+  <div class="fragment">
+    <pre><code class="css" data-trim contenteditable>
+    h1, h2, h3 { text-decoration: underline }
+    </code></pre>
+    <p>This selects any <code>&lt;h1&gt;, &lt;h2&gt; and &lt;h3&gt;</code> tags.</p>
+  </div>    
+</section>
+
+<section>
+  <p>Selectors can be nested:</p>
+  <div class="fragment">
+    <pre><code class="css" data-trim contenteditable>
+    div h1 { color: blue; }
+    </code></pre>
+    <p>This selects any <code>&lt;h1&gt;</code> tags inside <code>&lt;div&gt;</code> tags.</p>
+  </div> 
+  
+<div class="fragment">
+<pre><code class="html"><h1>This is NOT affected</h1>
+
+<div>
+  <h1>This IS affected</h1>
+</div>
+</code></pre>
+</div>
+    
+</section>
+
+<section>
+  <p>It doesn't matter how deeply nested they are:</p>
+
+  <pre><code class="css" data-trim contenteditable>
+  div h1 { color: blue; }
+  </code></pre>
+
+<pre><code class="html"><div>
+  <div>
+    <h1>This IS still affected</h1>
+  </div>
+</div>
+</code></pre>
+</section>
+
+<section>
+  <p>If you want to select only the first nesting use "&gt;"</p>
+  <pre><code class="css">
+  div&gt;h1 { color: green; }
+  </code></pre>
+  
+<pre><code class="html"><div>
+  <h1>This IS affected</h1>
+  <div>
+    <h1>This is NOT affected</h1>
+  </div>
+</div>
+</code></pre>
+</section>
+
+<section>
+  <h2>Recap</h2>
+</section>
+
+<section>
+  <pre><code class="css">p { color: green; }</code></pre>
+  <pre class="fragment"><code class="css">.important { color: green; }</code></pre>
+  <pre class="fragment"><code class="css">#paragraph-1 { color: green; }</code></pre>
+  <pre class="fragment"><code class="css">h1, h2, h3, h4 { color: green; }</code></pre>
+  <pre class="fragment"><code class="css">p em { color: green; }</code></pre>
+  <pre class="fragment"><code class="css">div>h1 { color: green; }</code></pre>
+</section>
