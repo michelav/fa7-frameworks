@@ -87,36 +87,36 @@ transition: slide
 
 <section>
  
-  <section>
+  <section data-transition="fade-in">
     <h2>Positioning</h2>
   </section>
   
-  <section>
+  <section data-transition="fade-in">
     <p>Static (default)</p>
     <img src="/media/20160224_Position_Static.svg" alt="Illustration of static positioning.">
   </section>
   
-  <section>
+  <section data-transition="fade-in">
     <p>Relative</p>
     <img src="/media/20160224_Position_RelativeNoOffset.svg" alt="Illustration of relative positioning with no offset.">
   </section>
   
-  <section>
+  <section data-transition="fade-in">
     <p>Relative with offset</p>
     <img src="/media/20160224_Position_Relative.svg" alt="Illustration of relative positioning.">
   </section>
   
-  <section>
+  <section data-transition="fade-in">
     <p>Fixed</p>
     <img src="/media/20160224_Position_Fixed.svg" alt="Illustration of fixed positioning.">
   </section>
   
-  <section>
+  <section data-transition="fade-in">
     <p>Absolute</p>
     <img src="/media/20160224_Position_Absolute.svg" alt="Illustration of absolute positioning.">
   </section>
   
-  <section>
+  <section data-transition="fade-in">
     <p>Absolute inside a positioned element.</p>
     <img src="/media/20160224_Position_AbsoluteInRelative.svg" alt="Illustration of absolute positioning inside positioned element.">
   </section>
