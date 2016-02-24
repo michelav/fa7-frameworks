@@ -17,47 +17,115 @@ transition: slide
   <section>
     <h2>Display types</h2>
   </section>
+  
+  <section>
+<pre data-trim data-noescape ><code><p>
+  <img src="/media/pattern_1.svg" width="50px">
+  <img src="/media/pattern_2.svg" width="50px">
+  <img src="/media/pattern_3.svg" width="50px">
+</p>
+
+<p> Aliquam erat volutpat. Suspendisse varius faucibus lectus 
+quis sodales. Pellentesque iaculis feugiat pharetra. Morbi 
+nec massa a dui auctor euismod et fringilla quam. Morbi 
+iaculis risus vitae nunc vestibulum pharetra.</p>
+
+<p>Donec ultricies nibh tellus, at feugiat urna fringilla ac. 
+<em>Sed venenatis ligula sed dui condimentum lobortis.</em> 
+Aenean et lorem massa. Curabitur rhoncus, tortor id euismod 
+ullamcorper, urna odio euismod turpis, sed tempor ipsum.</p></code></pre>
+  </section>
  
   <section data-transition="fade-in">
-    <p><span style="visibility: hidden">Block</span></p>   
-   
-    <p style="text-align: left;"><small> Aliquam erat volutpat. Suspendisse varius <img style="vertical-align: bottom;  margin: 0;" src="/media/flower.svg" width="50px"> faucibus lectus quis sodales.  Donec rutrum rutrum risus eget tincidunt. Pellentesque iaculis feugiat pharetra. Morbi nec massa a dui auctor euismod et fringilla quam. Morbi iaculis risus vitae nunc vestibulum pharetra.</small></p>
+    <p><span style="visibility: hidden">Block</span></p>
     
-    <p style="text-align: left;"><small>Donec ultricies nibh tellus, at feugiat urna fringilla ac. Vestibulum dapibus fermentum nulla, sed mattis mauris laoreet et. <em style="">Sed venenatis ligula sed dui condimentum lobortis.</em> Aenean et lorem massa. Curabitur rhoncus, tortor id euismod ullamcorper, urna odio euismod turpis, sed tempor ipsum nisi congue risus. </small></p>
-  </section>
-  
-   <section data-transition="fade-in">
-    <p>Block</p>   
+    <p style="text-align: left;">
+      <img style="vertical-align: bottom;  margin: 0;" src="/media/pattern_1.svg" width="50px">
+      <img style="vertical-align: bottom;  margin: 0;" src="/media/pattern_2.svg" width="50px">
+      <img style="vertical-align: bottom;  margin: 0;" src="/media/pattern_3.svg" width="50px"> 
+    </p>
    
-    <p style="text-align: left; border: 1px solid #ffffbb;"><small> Aliquam erat volutpat. Suspendisse varius <img style="vertical-align: bottom;  margin: 0;" src="/media/flower.svg" width="50px"> faucibus lectus quis sodales.  Donec rutrum rutrum risus eget tincidunt. Pellentesque iaculis feugiat pharetra. Morbi nec massa a dui auctor euismod et fringilla quam. Morbi iaculis risus vitae nunc vestibulum pharetra.</small></p>
+    <p style="text-align: left;"><small> Aliquam erat volutpat. Suspendisse varius faucibus lectus quis sodales. Pellentesque iaculis feugiat pharetra. Morbi nec massa a dui auctor euismod et fringilla
+    quam. Morbi iaculis risus vitae nunc vestibulum pharetra.</small></p>
     
-    <p style="text-align: left; border: 1px solid #ffffbb;"><small>Donec ultricies nibh tellus, at feugiat urna fringilla ac. Vestibulum dapibus fermentum nulla, sed mattis mauris laoreet et. <em style="">Sed venenatis ligula sed dui condimentum lobortis.</em> Aenean et lorem massa. Curabitur rhoncus, tortor id euismod ullamcorper, urna odio euismod turpis, sed tempor ipsum nisi congue risus. </small></p>
-  </section>
-  
-  <section data-transition="fade-in">
-    <p>Inline</p>   
-   
-    <p style="text-align: left;"><small> Aliquam erat volutpat. Suspendisse varius <img style="vertical-align: bottom;  margin: 0;" src="/media/flower.svg" width="50px"> faucibus lectus quis sodales.  Donec rutrum rutrum risus eget tincidunt. Pellentesque iaculis feugiat pharetra. Morbi nec massa a dui auctor euismod et fringilla quam. Morbi iaculis risus vitae nunc vestibulum pharetra.</small></p>
-    
-    <p style="text-align: left;"><small>Donec ultricies nibh tellus, at feugiat urna fringilla ac. Vestibulum dapibus fermentum nulla, sed mattis mauris laoreet et. <em style="border: 1px solid #ffffbb;">Sed venenatis ligula sed dui condimentum lobortis.</em> Aenean et lorem massa. Curabitur rhoncus, tortor id euismod ullamcorper, urna odio euismod turpis, sed tempor ipsum nisi congue risus. </small></p>
+    <p style="text-align: left;"><small>Donec ultricies nibh tellus, at feugiat urna fringilla ac. <em style="">Sed venenatis ligula sed dui condimentum lobortis.</em> Aenean et lorem massa. Curabitur rhoncus, tortor id euismod ullamcorper, urna odio euismod turpis, sed tempor ipsum. </small></p>
   </section>
   
   <section data-transition="fade-in">
-    <p>Inline-block</p>   
-   
-    <p style="text-align: left;"><small> Aliquam erat volutpat. Suspendisse varius <img style="border: 1px solid #ffffbb; vertical-align: bottom;  margin: 0;" src="/media/flower.svg" width="50px"> faucibus lectus quis sodales.  Donec rutrum rutrum risus eget tincidunt. Pellentesque iaculis feugiat pharetra. Morbi nec massa a dui auctor euismod et fringilla quam. Morbi iaculis risus vitae nunc vestibulum pharetra.</small></p>
+    <p><span>Block</span></p>
     
-    <p style="text-align: left;"><small>Donec ultricies nibh tellus, at feugiat urna fringilla ac. Vestibulum dapibus fermentum nulla, sed mattis mauris laoreet et. <em style="">Sed venenatis ligula sed dui condimentum lobortis.</em> Aenean et lorem massa. Curabitur rhoncus, tortor id euismod ullamcorper, urna odio euismod turpis, sed tempor ipsum nisi congue risus. </small></p>
+    <p style="text-align: left; border: 3px solid #ffff66;">
+      <img style="vertical-align: bottom;  margin: 0;" src="/media/pattern_1.svg" width="50px">
+      <img style="vertical-align: bottom;  margin: 0;" src="/media/pattern_2.svg" width="50px">
+      <img style="vertical-align: bottom;  margin: 0;" src="/media/pattern_3.svg" width="50px"> 
+    </p>
+   
+    <p style="text-align: left; border: 3px solid #ffff66;"><small> Aliquam erat volutpat. Suspendisse varius faucibus lectus quis sodales. Pellentesque iaculis feugiat pharetra. Morbi nec massa a dui auctor euismod et fringilla
+    quam. Morbi iaculis risus vitae nunc vestibulum pharetra.</small></p>
+    
+    <p style="text-align: left; border: 3px solid #ffff66;"><small>Donec ultricies nibh tellus, at feugiat urna fringilla ac. <em style="">Sed venenatis ligula sed dui condimentum lobortis.</em> Aenean et lorem massa. Curabitur rhoncus, tortor id euismod ullamcorper, urna odio euismod turpis, sed tempor ipsum. </small></p>
   </section>
-   
-   
+  
   <section data-transition="fade-in">
-    <p>None</p>   
-   
-    <p style="text-align: left;"><small> Aliquam erat volutpat. Suspendisse varius <img style="vertical-align: bottom;  margin: 0;" src="/media/flower.svg" width="50px"> faucibus lectus quis sodales.  Donec rutrum rutrum risus eget tincidunt. Pellentesque iaculis feugiat pharetra. Morbi nec massa a dui auctor euismod et fringilla quam. Morbi iaculis risus vitae nunc vestibulum pharetra.</small></p>
+    <p><span>Inline</span></p>
     
-    <p style="text-align: left;"><small>Donec ultricies nibh tellus, at feugiat urna fringilla ac. Vestibulum dapibus fermentum nulla, sed mattis mauris laoreet et. <em style="">Sed venenatis ligula sed dui condimentum lobortis.</em> Aenean et lorem massa. Curabitur rhoncus, tortor id euismod ullamcorper, urna odio euismod turpis, sed tempor ipsum nisi congue risus. </small></p>
-  </section> 
+    <p style="text-align: left;">
+      <img style="vertical-align: bottom;  margin: 0;" src="/media/pattern_1.svg" width="50px">
+      <img style="vertical-align: bottom;  margin: 0;" src="/media/pattern_2.svg" width="50px">
+      <img style="vertical-align: bottom;  margin: 0;" src="/media/pattern_3.svg" width="50px"> 
+    </p>
+   
+    <p style="text-align: left;"><small> Aliquam erat volutpat. Suspendisse varius faucibus lectus quis sodales. Pellentesque iaculis feugiat pharetra. Morbi nec massa a dui auctor euismod et fringilla
+    quam. Morbi iaculis risus vitae nunc vestibulum pharetra.</small></p>
+    
+    <p style="text-align: left;"><small>Donec ultricies nibh tellus, at feugiat urna fringilla ac. <em style=" border: 3px solid #ffff66;">Sed venenatis ligula sed dui condimentum lobortis.</em> Aenean et lorem massa. Curabitur rhoncus, tortor id euismod ullamcorper, urna odio euismod turpis, sed tempor ipsum. </small></p>
+  </section>
+  
+  <section data-transition="fade-in">
+    <p><span>Inline-Block</span></p>
+    
+    <p style="text-align: left;">
+      <img style="margin: 0; border: 3px solid #ffff66;" src="/media/pattern_1.svg" width="50px">
+      <img style="margin: 0; border: 3px solid #ffff66;" src="/media/pattern_2.svg" width="50px">
+      <img style="margin: 0; border: 3px solid #ffff66;" src="/media/pattern_3.svg" width="50px"> 
+    </p>
+   
+    <p style="text-align: left;"><small> Aliquam erat volutpat. Suspendisse varius faucibus lectus quis sodales. Pellentesque iaculis feugiat pharetra. Morbi nec massa a dui auctor euismod et fringilla
+    quam. Morbi iaculis risus vitae nunc vestibulum pharetra.</small></p>
+    
+    <p style="text-align: left;"><small>Donec ultricies nibh tellus, at feugiat urna fringilla ac. <em style="">Sed venenatis ligula sed dui condimentum lobortis.</em> Aenean et lorem massa. Curabitur rhoncus, tortor id euismod ullamcorper, urna odio euismod turpis, sed tempor ipsum. </small></p>
+  </section>
+  
+  <section data-transition="fade-in">
+    <p><span>Inline-Block</span></p>
+    
+    <p style="text-align: left;">
+      <img style="margin: 0; border: 3px solid #ffff66;" src="/media/pattern_1.svg" width="50px">
+      <img style="margin: 0; border: 3px solid #ffff66;" src="/media/pattern_2.svg" width="50px">
+      <img style="margin: 0; border: 3px solid #ffff66;" src="/media/pattern_3.svg" width="50px"> 
+    </p>
+   
+    <p style="text-align: left;"><small> Aliquam erat volutpat. Suspendisse varius faucibus lectus quis sodales. Pellentesque iaculis feugiat pharetra. <img style="margin: 0; border: 3px solid #ffff66;" src="/media/pattern_1.svg" width="50px"> Morbi nec massa a dui auctor euismod et fringilla
+    quam. Morbi iaculis risus vitae nunc vestibulum pharetra.</small></p>
+    
+    <p style="text-align: left;"><small>Donec ultricies nibh tellus, at feugiat urna fringilla ac. <em style="">Sed venenatis ligula sed dui condimentum lobortis.</em> Aenean et lorem massa. Curabitur rhoncus, tortor id euismod ullamcorper, urna odio euismod turpis, sed tempor ipsum. </small></p>
+  </section>
+  
+  <section data-transition="fade-in">
+    <p><span>None</span></p>
+    
+    <p style="text-align: left;">
+      <img style="vertical-align: bottom;  margin: 0;" src="/media/pattern_1.svg" width="50px">
+      <img style="vertical-align: bottom;  margin: 0;" src="/media/pattern_2.svg" width="50px">
+      <img style="vertical-align: bottom;  margin: 0;" src="/media/pattern_3.svg" width="50px"> 
+    </p>
+   
+    <p style="text-align: left;"><small> Aliquam erat volutpat. Suspendisse varius faucibus lectus quis sodales. Pellentesque iaculis feugiat pharetra. Morbi nec massa a dui auctor euismod et fringilla
+    quam. Morbi iaculis risus vitae nunc vestibulum pharetra.</small></p>
+    
+    <p style="text-align: left;"><small>Donec ultricies nibh tellus, at feugiat urna fringilla ac. <em style="">Sed venenatis ligula sed dui condimentum lobortis.</em> Aenean et lorem massa. Curabitur rhoncus, tortor id euismod ullamcorper, urna odio euismod turpis, sed tempor ipsum. </small></p>
+  </section>
+
 </section>
 
 <section>
