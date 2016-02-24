@@ -92,19 +92,33 @@ transition: slide
   </section>
   
   <section>
-  <p>static (default)</p>
+    <p>Static (default)</p>
+    <img src="/media/20160224_Position_Static.svg" alt="Illustration of static positioning.">
   </section>
   
   <section>
-  <p>relative</p>
+    <p>Relative</p>
+    <img src="/media/20160224_Position_RelativeNoOffset.svg" alt="Illustration of relative positioning with no offset.">
   </section>
   
   <section>
-  <p>fixed</p>
+    <p>Relative with offset</p>
+    <img src="/media/20160224_Position_Relative.svg" alt="Illustration of relative positioning.">
   </section>
   
   <section>
-  <p>absolute</p>
+    <p>Fixed</p>
+    <img src="/media/20160224_Position_Fixed.svg" alt="Illustration of fixed positioning.">
+  </section>
+  
+  <section>
+    <p>Absolute</p>
+    <img src="/media/20160224_Position_Absolute.svg" alt="Illustration of absolute positioning.">
+  </section>
+  
+  <section>
+    <p>Absolute inside a positioned element.</p>
+    <img src="/media/20160224_Position_AbsoluteInRelative.svg" alt="Illustration of absolute positioning inside positioned element.">
   </section>
   
 </section>
