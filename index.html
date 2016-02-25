@@ -2,23 +2,26 @@
 layout: default
 ---
 
-{% for post in paginator.posts %}
+{% for post in paginator.posts | limit: 1%}
 <div class="jumbotron">
   <div class="container">
-    <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+    <div class="col-sm-8  col-sm-offset-2">
+      <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+    </div>
   </div>
 </div>
 
 <div class="container">
   <div class="row">
-    <div class="col-sm-8 col-sm-offset-2">
-      <p>{{ post.content }}</p>
+    <div class="post-content col-sm-8 col-sm-offset-2">
+      {{ post.content }}
     </div>
   </div>
 </div>
 {% endfor %}
 
 
+<!--
 <div class="container">
   <div class="text-center">
     {% if paginator.previous_page %}
@@ -30,3 +33,4 @@ layout: default
     {% endif %}
   </div>
 </div>
+-->
