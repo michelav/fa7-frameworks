@@ -16,6 +16,15 @@ Images and the web
   
   * File size differences
   * Resolution vs compression
+  
+Exercise:
+  * Resize image adjust compression
+  * Make a GIF
+  * Import an SVG
+    * As image
+    * As object
+    * Copy and paste
+  
 -->
 
 <section>

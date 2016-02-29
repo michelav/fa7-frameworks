@@ -12,6 +12,7 @@ File management on the web
   * How linking works
   * Files to track
   * Moving files around
+  * Keep it organized
   * FTP
     * Basics
   * GIT
