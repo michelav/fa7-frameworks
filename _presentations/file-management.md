@@ -9,10 +9,6 @@ transition: slide
 <!--
 
 File management on the web
-  * How linking works
-  * Files to track
-  * Moving files around
-  * Keep it organized
   * FTP
     * Basics
   * GIT
@@ -26,13 +22,10 @@ File management on the web
 -->
 
 <section>
-
   <h2>File management for the web</h2>
-
 </section>
 
 <section>
-  
   <section>
     <h2>Links</h2>
   </section>
