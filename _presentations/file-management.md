@@ -168,46 +168,6 @@ File management on the web
   </section>
 </section>
   
-<section>
-  <section>
-    <h2>FTP</h2>
-    <p>File Transfer Protocol</p>
-  </section>
-  <section>
-    <p></p>
-  </section>
-  
-  <section>
-    <p></p>
-  </section>
-  
-</section>
-
-<section>
-  <section>
-    <h2>GIT</h2>
-  </section>
-  
-  <section>
-    <p></p>
-  </section>
-  
-  <section>
-    <p></p>
-  </section>
-  
-  <section>
-    <p></p>
-  </section>
-  
-  <section>
-    <p></p>
-  </section>
-  
-  <section>
-    <p></p>
-  </section>
-  
 </section>
   
 
