@@ -20,8 +20,8 @@ gems: [jekyll-paginate]
 markdown: kramdown
 
 # pagination
-paginate: 5
-paginate_path: "page:num"
+# paginate: 5
+# paginate_path: "page:num"
 
 # Collections
 collections:
