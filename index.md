@@ -17,6 +17,12 @@ corporativas utilizando _frameworks_ conhecidos como EJB e Spring.
 
 Introdução ao Spring. Injeção de Dependência. Inversão de Controle. Escopo Customizado. Controlando Ciclo de vida. Properties. Anotações. Spring. AOP. JDBC. Propagação Transacional. Enterprise JavaBeans (EJBs). Modelo de componentes e arquitetura EJB. Servidores e container que suportam EJB. Session beans: Stateless e Stateful. Entity bean: BMP e CMP. Messaging Beans. Serviço de agendamento (Timer Service). Interceptadores (Interceptors). Transações (Transactions). Segurança.
 
+# Apresentações
+
+  * [Course Overview](/presentations/course-intro.html)
+  * [Intro to HTML](/presentations/html-intro.html)
+
+
 <!-- <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
