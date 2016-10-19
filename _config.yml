@@ -6,22 +6,19 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Web Projects
-email: kegan@risd.edu
+title: Desenvolvimento com frameworks e componentes
+email: michel.vasconcelos@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Kelly Egan, Instructor &bull; Photo‐5345, Spring 2016 &bull; Thurs., 1 &ndash; 6pm
+  Site do conteúdo da disciplina de especialização da FA7 sobre Desenvolvimento
+  Corporativo com frameworks e componentes.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://web-projects-course.github.io" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://michelav.github.io/fa7-frameworks" # the base hostname & protocol for your site
+# twitter_username: jekyllrb
+# github_username:  jekyll
 gems: [jekyll-paginate]
 
 # Build settings
 markdown: kramdown
-
-# pagination
-# paginate: 5
-# paginate_path: "page:num"
 
 # Collections
 collections:

@@ -10,17 +10,117 @@ Disciplina obrigatória do curso de especialização em desenvolvimento e arquit
 de _software_ cujo objetivo é preparar os alunos para o desenvolvimento de aplicações
 corporativas utilizando _frameworks_ conhecidos como EJB e Spring.
 
-# Pré-requisitos
-
 <section id='programa' />
 # Programa
 
-Introdução ao Spring. Injeção de Dependência. Inversão de Controle. Escopo Customizado. Controlando Ciclo de vida. Properties. Anotações. Spring. AOP. JDBC. Propagação Transacional. Enterprise JavaBeans (EJBs). Modelo de componentes e arquitetura EJB. Servidores e container que suportam EJB. Session beans: Stateless e Stateful. Entity bean: BMP e CMP. Messaging Beans. Serviço de agendamento (Timer Service). Interceptadores (Interceptors). Transações (Transactions). Segurança.
+Durante a disciplina abordaremos os conceitos básicos do desenvolvimento de soluções
+corporativas utilizando _frameworks_ de mercado. Os tópicos programados para a disciplina são:
+
+- Desenvolvimento corporativo
+  - Histórico
+  - Principais conceitos
+- Enterprise Java Beans
+  - Conceitos e tipos
+  - Modelo de componentes e arquitetura
+  - Containers que suportam EJBs
+  - Session Beans: _Stateless_ e _Stateful_
+  - Message Driven Beans
+  - Acesso a dados: JPA
+  - Outros serviços
+- Introdução ao Spring
+  - Injeção de Dependência e Inversão de Controle
+  - Beans: Ciclo de vida e escopo
+  - Anotações
+  - Serviços: AOP, controle de transações, etc
+
+# Agenda
+
+
+
+<div class="col-md-8">
+<table class="table table-hover table-condensed">
+<tr>
+  <th class="col-xs-2">Data</th>
+  <th>Tópicos</th>
+</tr>
+<tr>
+  <td class="date-cell"><date datetime="31-10-2016">31/10</date></td>
+  <td class="agenda-cell">
+    <a href="{{site.github.url}}/presentations/course-intro.html">Desenvolvimento corporativo</a>
+    <ul>
+      <li>Histórico</li>
+      <li>Principais conceitos</li>
+    </ul>
+
+    <a href="{{site.github.url}}/presentations/course-intro.html">Enterprise Java Beans</a>
+    <ul>
+      <li>Conceitos e tipos</li>
+      <li>Modelo de componentes e arquitetura</li>
+      <li>Containers que suportam EJBs</li>
+      <li>Session Beans: _Stateless_ e _Stateful_</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td class="date-cell"><date datetime="07-11-2016">07/11</date></td>
+  <td class="agenda-cell">
+    <a href="{{site.github.url}}/presentations/course-intro.html">Enterprise Java Beans</a>
+    <ul>
+      <li>Message Driven Beans</li>
+      <li>Acesso a Dados: JPA</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td class="date-cell"><date datetime="09-11-2016">09/11</date></td>
+  <td class="agenda-cell">
+    <a href="{{site.github.url}}/presentations/course-intro.html">Enterprise Java Beans</a>
+    <ul>
+      <li>Outros serviços</li>
+    </ul>
+
+    <a href="{{site.github.url}}/presentations/course-intro.html">Introdução ao Spring</a>
+    <ul>
+      <li>Injeção de Dependência e Inversão de Controle</li>
+      <li>Beans: Ciclo de vida e escopo</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td class="date-cell"><date datetime="16-11-2016">16/11</date></td>
+  <td class="agenda-cell">
+    <a href="{{site.github.url}}/presentations/course-intro.html">Introdução ao Spring</a>
+    <ul>
+      <li>Beans: Ciclo de vida e escopo</li>
+      <li>Anotações</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td class="date-cell"><date datetime="21-11-2016">21/11</date></td>
+  <td class="agenda-cell">
+    <a href="{{site.github.url}}/presentations/course-intro.html">Introdução ao Spring</a>
+    <ul>
+      <li>Anotações</li>
+      <li>Serviços: AOP, controle de transações, etc</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td class="date-cell"><date datetime="23-11-2016">23/11</date></td>
+  <td class="agenda-cell">Revisão e apresentação de trabalhos</td>
+</tr>
+</table>
+</div>
+
+
+# Leitura recomendada
+TBD
 
 # Apresentações
 
-  * [Course Overview](/presentations/course-intro.html)
-  * [Intro to HTML](/presentations/html-intro.html)
+  * [Course Overview]({{site.github.url}}/presentations/course-intro.html)
+  * [Intro to HTML]({{site.github.url}}/presentations/html-intro.html)
 
 
 <!-- <div class="posts">
