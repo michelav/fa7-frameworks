@@ -46,7 +46,7 @@ corporativas utilizando _frameworks_ de mercado. Os tópicos programados para a 
 <tr>
   <td class="date-cell"><date datetime="31-10-2016">31/10</date></td>
   <td class="agenda-cell">
-    <a href="{{site.github.url}}/presentations/course-intro.html">Desenvolvimento corporativo</a>
+    <a href="{{site.github.url}}/presentations/intro-desenv.html">Desenvolvimento corporativo</a>
     <ul>
       <li>Histórico</li>
       <li>Principais conceitos</li>

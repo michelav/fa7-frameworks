@@ -39,10 +39,10 @@
       a.home-link {
         color: #646464;
         font-size: 0.8em;
-      }    
-    </style>   
+      }
+    </style>
 
-   
+
     <!-- Printing and PDF exports -->
     <script>
       var link = document.createElement( 'link' );
@@ -67,7 +67,7 @@
     <div class="reveal">
 
       <div class="slides">
-        <small><a href="/" class="home-link">{{ site.title }}</a></small>
+        <!--small><a href="/" class="home-link">{{ site.title }}</a></small-->
         {{ content }}
       </div>
     </div>
@@ -94,7 +94,8 @@
           { src: '{{ "/reveal_js/plugin/markdown/markdown.js" | prepend: site.baseurl }}', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
           { src: '{{ "/reveal_js/plugin/highlight/highlight.js" | prepend: site.baseurl }}', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
           { src: '{{ "/reveal_js/plugin/zoom-js/zoom.js" | prepend: site.baseurl }}', async: true },
-          { src: '{{ "/reveal_js/plugin/notes/notes.js" | prepend: site.baseurl }}', async: true }
+          { src: '{{ "/reveal_js/plugin/notes/notes.js" | prepend: site.baseurl }}', async: true },
+          { src: '{{ "/reveal_js/plugin/tagcloud/tagcloud.js" | prepend: site.baseurl }}', async: true }
         ]
       });
     </script>
