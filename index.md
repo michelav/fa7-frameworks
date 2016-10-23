@@ -52,7 +52,7 @@ corporativas utilizando _frameworks_ de mercado. Os tópicos programados para a 
       <li>Principais conceitos</li>
     </ul>
 
-    <a href="{{site.github.url}}/presentations/course-intro.html">Enterprise Java Beans</a>
+    <a href="{{site.github.url}}/presentations/ejbs.html">Enterprise Java Beans</a>
     <ul>
       <li>Conceitos e tipos</li>
       <li>Modelo de componentes e arquitetura</li>
