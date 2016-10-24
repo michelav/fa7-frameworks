@@ -124,31 +124,6 @@ transition: slide
         </section>
 </section>
 <section>
-    <h2>Resumindo...</h2>
-    <section>
-        <h3>Proliferação de aplicações</h3>
-        <p>O crescimento da TI nas décadas de 80 e 90 alavancaram a criação de aplicações monolíticas.
-        Os procedimentos, antes manuais, foram automatizados na forma de sistemas.</p>
-    </section>
-    <section>
-        <h3>Críticas ao modelo arquitetural</h3>
-        <p>Com a necessidade de integração entre os sistemas começou-se a perceber
-        a necessidade de uma nova arquitetura que promovesse o reuso, integração
-        e escalabilidade.</p>
-    </section>
-    <section>
-        <h3>Plataforma JEE</h3>
-        <p>A plataforma JEE foi concebida para fornecer um ambiente onde componentes
-        distribuídos colaboram entre si para atender os requisitos funcionais e
-        não funcionais dos usuários.</p>
-    </section>
-    <section>
-        <h3>Containers</h3>
-        <p>Para que esses componentes executem, eles necessitam de um ambiente propício que
-        forneça serviços como segurança, localização, controle transacional, etc.</p>
-    </section>
-</section>
-<section>
     <h2>E quem são esses componentes?</h2>
      <span class="fragment"><a href="{{site.github.url}}/presentations/ejbs.html"><img src="{{site.github.url}}/media/bean-320x290.png"></a></span>
 </section>
