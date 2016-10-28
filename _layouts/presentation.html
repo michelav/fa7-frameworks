@@ -40,9 +40,22 @@
         color: #646464;
         font-size: 0.8em;
       }
-     .slides section h3 {
+     .titlemark {
        color: orange !important; outline: gray;
      }
+
+   .reveal .slides section .fragment.underline {
+    opacity: 1;
+    visibility: visible;}
+   .reveal .slides section .fragment.underline.visible {
+    text-decoration: underline; }
+
+      .reveal .slides section .fragment.grow.visible {
+    -webkit-transform: scale(1.5, 1.5) !important;
+        -ms-transform: scale(1.5, 1.5) !important;
+            transform: scale(1.5, 1.5) !important; }
+
+    .reveal section img { background:none; border:none; box-shadow:none; }
     </style>
 
 
@@ -84,7 +97,7 @@
         controls: true,
         progress: true,
         history: true,
-        center: true,
+        center: true  ,
         {%if page.transition %}
           transition: '{{page.transition}}',
         {% else %}
@@ -101,6 +114,7 @@
           { src: '{{ "/reveal_js/plugin/tagcloud/tagcloud.js" | prepend: site.baseurl }}', async: true }
         ]
       });
+      Reveal.configure({ slideNumber: 'c/t' });
     </script>
 
   </body>
