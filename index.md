@@ -33,9 +33,9 @@ corporativas utilizando _frameworks_ de mercado. Os tópicos programados para a 
   - Anotações
   - Serviços: AOP, controle de transações, etc
 
+
+<section id='agenda' />
 # Agenda
-
-
 
 <div class="col-md-8">
 <table class="table table-hover table-condensed">
@@ -47,25 +47,33 @@ corporativas utilizando _frameworks_ de mercado. Os tópicos programados para a 
   <td class="date-cell"><date datetime="31-10-2016">31/10</date></td>
   <td class="agenda-cell">
     <a href="{{site.github.url}}/presentations/intro-desenv.html">Desenvolvimento corporativo</a>
+    <a href="{{site.github.url}}/pdfs/intro-desenv.pdf">(PDF)</a>
     <ul>
       <li>Histórico</li>
       <li>Principais conceitos</li>
     </ul>
-
+    <a href="{{site.github.url}}/presentations/javaee_plat.html">Plataforma Java EE</a>
+    <a href="{{site.github.url}}/pdfs/javaee_plat.pdf">(PDF)</a>
+    <ul>
+      <li>O que é a plataforma e histórico</li>
+      <li>Containers</li>
+      <li>Principais serviços</li>
+    </ul>
     <a href="{{site.github.url}}/presentations/ejbs.html">Enterprise Java Beans</a>
+    <a href="{{site.github.url}}/pdfs/ejbs.pdf">(PDF)</a>
     <ul>
       <li>Conceitos e tipos</li>
       <li>Modelo de componentes e arquitetura</li>
-      <li>Containers que suportam EJBs</li>
-      <li>Session Beans: _Stateless_ e _Stateful_</li>
+      <li>Session Beans: <em>Stateless</em></li>
     </ul>
   </td>
 </tr>
 <tr>
   <td class="date-cell"><date datetime="07-11-2016">07/11</date></td>
   <td class="agenda-cell">
-    <a href="{{site.github.url}}/presentations/course-intro.html">Enterprise Java Beans</a>
+    Enterprise Java Beans
     <ul>
+      <li>Session Beans</li>
       <li>Message Driven Beans</li>
       <li>Acesso a Dados: JPA</li>
     </ul>
@@ -74,12 +82,12 @@ corporativas utilizando _frameworks_ de mercado. Os tópicos programados para a 
 <tr>
   <td class="date-cell"><date datetime="09-11-2016">09/11</date></td>
   <td class="agenda-cell">
-    <a href="{{site.github.url}}/presentations/course-intro.html">Enterprise Java Beans</a>
+    Enterprise Java Beans
     <ul>
       <li>Outros serviços</li>
     </ul>
 
-    <a href="{{site.github.url}}/presentations/course-intro.html">Introdução ao Spring</a>
+    Introdução ao Spring
     <ul>
       <li>Injeção de Dependência e Inversão de Controle</li>
       <li>Beans: Ciclo de vida e escopo</li>
@@ -89,7 +97,7 @@ corporativas utilizando _frameworks_ de mercado. Os tópicos programados para a 
 <tr>
   <td class="date-cell"><date datetime="16-11-2016">16/11</date></td>
   <td class="agenda-cell">
-    <a href="{{site.github.url}}/presentations/course-intro.html">Introdução ao Spring</a>
+    Introdução ao Spring
     <ul>
       <li>Beans: Ciclo de vida e escopo</li>
       <li>Anotações</li>
@@ -99,7 +107,7 @@ corporativas utilizando _frameworks_ de mercado. Os tópicos programados para a 
 <tr>
   <td class="date-cell"><date datetime="21-11-2016">21/11</date></td>
   <td class="agenda-cell">
-    <a href="{{site.github.url}}/presentations/course-intro.html">Introdução ao Spring</a>
+    Introdução ao Spring
     <ul>
       <li>Anotações</li>
       <li>Serviços: AOP, controle de transações, etc</li>
@@ -117,10 +125,9 @@ corporativas utilizando _frameworks_ de mercado. Os tópicos programados para a 
 # Leitura recomendada
 TBD
 
-# Apresentações
-
-  * [Course Overview]({{site.github.url}}/presentations/course-intro.html)
-  * [Intro to HTML]({{site.github.url}}/presentations/html-intro.html)
+<section id='trabalho' />
+# Trabalhos
+TBD
 
 
 <!-- <div class="posts">

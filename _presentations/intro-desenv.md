@@ -36,11 +36,14 @@ transition: slide
     </section>
     <section><h3 class="titlemark">E o mais importante...</h3></section>
 </section>
-<section><h2>Divertir-se!</h2><img class='stretch' src="{{site.github.url}}/media/programming.gif" /></section>
+<section><h2>Divertir-se!</h2><img class='stretch' src="{{site.github.url}}/media/programmer_matrix.jpg" /></section>
 <section>
     <h2>Informações</h2>
-    <section data-markdown>
-        ### [https://github.com/michelav/fa7-frameworks](https://github.com/michelav/fa7-frameworks)
+    <section>
+        <h4 align="left">As informações sobre o curso estarão disponíveis no meu repositório GitHub</h4>
+        <h4 align="left"><a href="https://github.com/michelav/fa7-frameworks">
+        https://github.com/michelav/fa7-frameworks</a></h4>
+        <h4 align="left">A avaliação será feita por meio de um trabalho a ser definido oportunamente</h4>
     </section>
 </section>
 <section>
@@ -48,8 +51,8 @@ transition: slide
     <img class='stretch' src="{{site.github.url}}/media/client-server.jpg" />
 </section>
 <section>
-    <h3><p>Aplicações <span class="fragment highlight-blue">monolíticas</span> e
-    <span class="fragment highlight-blue">"departamentalizadas"</span> proliferavam nas grandes
+    <h3><p>Aplicações <span class="fragment highlight-red" data-fragment-index="1">monolíticas</span> e
+    <span class="fragment highlight-red" data-fragment-index="1">"departamentalizadas"</span> proliferavam nas grandes
     empresas</p></h3>
 </section>
 <section>
@@ -69,12 +72,12 @@ transition: slide
     </section>
     <section>
         <h3 class="titlemark">Interoperabilidade...</h3>
-        <p>Quase inexistente, prevalecendo o compartilhamento  de dados. Ex.:</p>
+        <p align="left">Quase inexistente, prevalecendo o compartilhamento  de dados. Ex.:</p>
         <ul>
             <li>Troca de arquivos</li>
             <li>visões em BD</li>
         </ul>
-        <p class="fragment titlemark">Aplicações eram verdadeiras "ilhas".</p>
+        <p  align="left" class="titlemark">Aplicações eram verdadeiras "ilhas".</p>
     </section>
 </section>
 <section>
@@ -82,7 +85,7 @@ transition: slide
     <section><img class="fragment" width="80%" src="{{site.github.url}}/media/fail.png" /></section>
 </section>
 <section>
-    <h2 class="titlemark"> E agora... Como escalar e interoperar?</h2>
+    <h2> E agora... Como escalar e interoperar?</h2>
 </section>
 <section>
     <h2>Componentização</h2>
