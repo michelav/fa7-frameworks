@@ -82,7 +82,7 @@ transition: slide
             <li><h4>Executa procedimento específico sem manter o estado entre chamadas</h4></li>
                 <ul><li>Ex.: verificar estoque, emprestar livro, debitar conta</li></ul>
             <li><h4><em>Thread-safe</em></h4></li>
-            <li>Podem ser associados a qualquer cliente</li>
+            <li><h4>Podem ser associados a qualquer cliente</h4></li>
             <li><h4>Anotações</h4></li>
                 <ul>
                     <li><code style="color: red;">@Stateless</code></li>

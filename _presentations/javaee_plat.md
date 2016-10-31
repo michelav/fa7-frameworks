@@ -24,6 +24,7 @@ transition: slide
         e <span class="fragment highlight-red" data-fragment-index="1">complexidade das aplicações</span>
         enquanto maximiza o seu
         <span class="fragment highlight-red" data-fragment-index="1">desempenho</span>.</p>
+        <aside class="notes">Reforçar o tempo que se perde implementando código de infraestrutura.</aside>
     </section>
 </section>
 <section>
@@ -33,10 +34,13 @@ transition: slide
 <section>
         <h2>Histórico</h2>
         <img class="stretch" src="{{site.github.url}}/media/jee_history.png">
+        <aside class="notes">Início da plataforma exigia muitas classes e interfaces para entregar um
+        comportamento. Falar sobre o benefício do modelo usado com anotações. Classes de Framework vs POJOs.</aside>
 </section>
 <section>
         <h2>Camadas</h2>
         <img class="stretch" src="{{site.github.url}}/media/jee_tiers.png" />
+        <aside class="notes">O foco do curso é na camada de negócio.</aside>
 </section>
 <!-- section>
     <h2>Camada de Negócio</h2>
@@ -104,6 +108,8 @@ transition: slide
             <li>Objeto remoto acessado via proxy</li>
             <li>Permite interoperar Java e Corba</li>
         </ul>
+        <aside class="notes">Falar sobre a importância do RMI. Mencionar a facilidade de implementação quando
+        comparado com Corba. Não necesita de IDL.Comparar com outros tipos de chamada remota.</aside>
     </section>
 </section>
 <section>
@@ -123,6 +129,7 @@ transition: slide
     <section>
     <h3 class="titlemark">Serviço de Nomes</h3>
     <img width="90%" src="{{site.github.url}}/media/naming_service.gif" />
+    <aside class="notes">Fazer paralelo com DNS.</aside>
     </section>
     <section>
     <br><br>

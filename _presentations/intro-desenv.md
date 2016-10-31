@@ -43,12 +43,24 @@ transition: slide
         <h4 align="left">As informações sobre o curso estarão disponíveis no meu repositório GitHub</h4>
         <h4 align="left"><a href="https://github.com/michelav/fa7-frameworks">
         https://github.com/michelav/fa7-frameworks</a></h4>
-        <h4 align="left">A avaliação será feita por meio de um trabalho a ser definido oportunamente</h4>
+    </section>
+    <section><h4 align="left">A avaliação será feita por meio de um trabalho a ser definido oportunamente</h4></section>
+    <section>
+    <h3 class="titlemark">Referências</h3>
+        <img src="{{site.github.url}}/media/MasteringEJB.jpg">
+        <img width="25%" src="{{site.github.url}}/media/ejb_inaction.jpg">
+    </section>
+        <section>
+    <h3 class="titlemark">Referências</h3><br>
+        <h4><a href="http://stackoverflow.com">Stack Overflow</a></h4>
+        <h4><a href="http://docs.oracle.com/javaee/7/index.html">Java EE Docs</a></h4>
     </section>
 </section>
 <section>
     <h2>Boom dos anos 80 e 90...</h2>
     <img class='stretch' src="{{site.github.url}}/media/client-server.jpg" />
+    <aside class="notes">Falar sobre downsizing e como isso impactou o desenvolvimento das aplicações. Aplicações
+    centralizadas em um Mainframe vs Aplicações em PC</aside>
 </section>
 <section>
     <h3><p>Aplicações <span class="fragment highlight-red" data-fragment-index="1">monolíticas</span> e
@@ -61,6 +73,9 @@ transition: slide
         <h3 class="titlemark">Coesão e encapsulamento...</h3>
         <p>Código que trata dos procedimentos de negócio é implementado em conjunto
         com aqueles que realizam tarefas de "infraestrutura".</p>
+        <aside class="notes">Ressaltar a diferença de abstração entre os tipos de procedimentos.
+        Negócio: mais abstrato. Infra: Menos abstrato. Conceituar tarefas de Infraestrutura. Ex: Abrir arquivos,
+        conectar com BD, abrir sockets.</aside>
     </section>
     <section>
         <h3 class="titlemark">Reuso...</h3>
@@ -155,7 +170,7 @@ transition: slide
         <h3 class="titlemark">E o que Java tem com isso?!</h3>
         <p>A plataforma JEE tornou-se a proposta adequada para desenvolvimento de aplicações
         corporativas em Java.</p>
-        <a href="{{site.github.url}}/presentations/ejbs.html">
+        <a href="{{site.github.url}}/presentations/javaee_plat.html">
         <img width="15%" src="{{site.github.url}}/media/javaee_logo.png"></a>
     </section>
 </section>
