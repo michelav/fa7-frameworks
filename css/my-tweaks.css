@@ -1,0 +1,39 @@
+.titlemark {
+ color: orange !important; outline: gray;
+}
+
+.reveal .slides section .fragment.underline {
+opacity: 1;
+visibility: visible;}
+.reveal .slides section .fragment.underline.visible {
+text-decoration: underline; }
+
+.reveal .slides section .fragment.grow.visible {
+-webkit-transform: scale(1.5, 1.5) !important;
+  -ms-transform: scale(1.5, 1.5) !important;
+      transform: scale(1.5, 1.5) !important; }
+
+.reveal section img { background:none; border:none; box-shadow:none; }
+
+.reveal div .divleft {
+width: 50%;
+height: 300px;
+float: left;
+}
+
+.reveal .slides section .fragment.highlight-dark-blue,
+.reveal .slides section .fragment.highlight-dark-red {
+  opacity: 1;
+  visibility: visible; }
+
+.reveal .slides section .fragment.highlight-dark-red.visible {
+  color:  #8B0000; }
+
+.reveal .slides section .fragment.highlight-dark-blue.visible {
+  color: #000080; }
+
+.reveal .slides section .fragment.highlight-current-dark--red.current-fragment {
+  color: #ff2c2d; }
+
+.reveal span.code, .reveal span.code-red  { font-size: 100%; font-family: monospace; }
+.reveal span.code-red { color: red; }
