@@ -249,7 +249,7 @@ transition: slide
 <section>
     <h2>Exercício 3</h2><br />
     <h4 align="left">O projeto da distribuidora necessita carregar informações de domínio sobre os fornecedores
-    e situação de produtos nos fornecedores. Crie um session bean que execute essa ação no início da aplicação.</h4>
+    e situação de produtos nos fornecedores. Crie um singleton session bean que carregue essas informações.</h4>
 </section>
 <section>
     <h1>Beans e Interfaces</h1>
@@ -474,7 +474,7 @@ transition: slide
     </section>
 </section>
 <section>
-    <h2>Exercício 5</h2>
+    <h2>Para Pensar...</h2>
 </section>
 <section>
     <h3 class="titlemark">Qual o melhor <em>design</em> para o problema</h3>
@@ -502,6 +502,12 @@ transition: slide
             não é de alta velocidade. Qual a sua proposta de solução para esse problema específico?</h4>
     </section>
 </section>
+<section>
+    <h2>Exercício 5</h2>
+    <h4 align="left">Ajuste o singleton bean do exercício 3 para carregar as informações de domínio no início
+    da aplicação.</h4>
+</section>
+
 <section>
     <h2>Assincronia na Plataforma Java EE</h2>
 </section>
