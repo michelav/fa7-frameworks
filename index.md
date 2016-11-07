@@ -74,9 +74,13 @@ corporativas utilizando _frameworks_ de mercado. Os tópicos programados para a 
     Enterprise Java Beans
     <ul>
       <li>Session Beans</li>
-      <li>Message Driven Beans</li>
-      <li>Acesso a Dados: JPA</li>
     </ul>
+    Comunicação Assíncrona
+      <ul>
+        <li>Modelos de comunicação</li>
+        <li>JMS</li>
+        <li>Message Driven Beans</li>
+      </ul>
   </td>
 </tr>
 <tr>
@@ -84,14 +88,14 @@ corporativas utilizando _frameworks_ de mercado. Os tópicos programados para a 
   <td class="agenda-cell">
     Enterprise Java Beans
     <ul>
-      <li>Outros serviços</li>
+      <li>Message Driven Beans</li>
     </ul>
-
-    Introdução ao Spring
+    Java EE - Persistência
     <ul>
-      <li>Injeção de Dependência e Inversão de Controle</li>
-      <li>Beans: Ciclo de vida e escopo</li>
+      <li>Entities e JPA</li>
+      <li>Frameworks de Persistência</li>
     </ul>
+    Java EE - Outros Serviços
   </td>
 </tr>
 <tr>
@@ -99,6 +103,7 @@ corporativas utilizando _frameworks_ de mercado. Os tópicos programados para a 
   <td class="agenda-cell">
     Introdução ao Spring
     <ul>
+      <li>Injeção de Dependência e Inversão de Controle</li>
       <li>Beans: Ciclo de vida e escopo</li>
       <li>Anotações</li>
     </ul>
@@ -125,8 +130,33 @@ corporativas utilizando _frameworks_ de mercado. Os tópicos programados para a 
 # Leitura recomendada
 TBD
 
+# Avaliação
 <section id='trabalho' />
-# Trabalhos
+Durante a disciplina, faremos duas avaliações da seguinte forma:
+
+1. Um seminário, a ser realizado em 23/11, em que discutiremos sobre tecnologias Server Side diversas;
+2. O design e implementação de um projeto de integração entre aplicações Java.
+
+### Seminário
+O objetivo é entender basicamente os conceitos que existem naquela tecnologia \ framework e compará-la
+com outras existentes. É obrigatório implementar um exemplo mínimo. O seminário deverá
+ser feito aos pares conforme o quadro.
+
+**Framework**  | **Grupo**
+---------------| -------------
+Play Framework |
+Node.Js        |
+Grails         |
+Spring Boot    |
+Django         |
+Express.Js     |
+Backbone.Js    |
+Rails          |
+ASP.NET MVC    |
+Flask          |
+Symfony        |
+
+### Projeto e Implementação de Aplicação
 TBD
 
 

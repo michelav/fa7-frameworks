@@ -123,9 +123,7 @@ transition: slide
     </section>
 </section>
 <section>
-    <h2>Exercício 2</h2>
-</section>
-<section>
+    <h2>Exercício 2</h2><br />
     <h4 align="left">Atualize o projeto distribuidora para executar uma ação de reserva em um Estoque em memória
         utilizando EJBs.</h4>
 </section>
@@ -247,6 +245,11 @@ transition: slide
             ```
         </script>
     </section>
+</section>
+<section>
+    <h2>Exercício 3</h2><br />
+    <h4 align="left">O projeto da distribuidora necessita carregar informações de domínio sobre os fornecedores
+    e situação de produtos nos fornecedores. Crie um session bean que execute essa ação no início da aplicação.</h4>
 </section>
 <section>
     <h1>Beans e Interfaces</h1>
@@ -411,16 +414,7 @@ transition: slide
         </section>
 </section>
 <section>
-    <h2>Exercício 3</h2>
-</section>
-<section>
-    <h4 align="left">O projeto da distribuidora necessita carregar informações de domínio sobre os fornecedores
-    e situação de produtos nos fornecedores. Crie um session bean que execute essa ação no início da aplicação.</h4>
-</section>
-<section>
-    <h2>Exercício 4</h2>
-</section>
-<section>
+    <h2>Exercício 4</h2><br />
     <h4 align="left">
     Forneça um Stateful Session Bean para controle de um "carrinho de reservas" de mercadorias onde
     o cliente possa incluir ou retirar produtos. O Bean deve prover uma operação para conclusão da reserva. Crie um
@@ -480,7 +474,7 @@ transition: slide
     </section>
 </section>
 <section>
-    <h2>Exercício 4</h2>
+    <h2>Exercício 5</h2>
 </section>
 <section>
     <h3 class="titlemark">Qual o melhor <em>design</em> para o problema</h3>
@@ -515,16 +509,16 @@ transition: slide
     <h2>Síncrono vs Assíncrono</h2>
     <img class="stretch" src="{{site.github.url}}/media/syncAsync.gif">
 </section>
-<section>
-    <h2>Quando usar</h2>
-    <ul>
-        <li>
-            <h4>Procedimentos de longa duração em que você não precisa acompanhar sua execução;</h4>
-        </li>
-        <li>
-            <h4>Procedimentos de longa duração em que você precisa conferir o resultado final.</h4>
-        </li>
-    </ul>
+<section data-markdown>
+    <script type="text/template">
+    ## Quando usar
+
+
+        - #### Procedimentos de longa duração em que você não precisa acompanhar sua execução;
+        - #### Procedimentos de longa duração em que você precisa conferir o resultado final;
+        - #### Aumentar a taxa de processamento da aplicação;
+        - #### Melhorar o tempo de resposta da aplicação.
+    </script>
 </section>
 <section>
     <h2>Como implementar</h2>
@@ -538,12 +532,380 @@ transition: slide
     </ol>
 </section>
 <section>
-    Mensageria - Conceitos
+    <h5 class="titlemark">Cliente</h5>
+        <pre><code>
+            public class MyServlet extends HttpServlet {
+                @EJB
+                MailerBean bean;
+                ...
+                public void processSomething(...) {
+                    ... // Processando algo no metodo
+                    Future&lt;String&gt; status = bean.sendMessage(email);
+                    ... // Continua processando
+                    status.get() // Checa status
+                }
+            }
+    </code></pre>
+    <h5 class="titlemark">Bean</h5>
+        <pre><code>
+            @Stateless
+            public class MailerBean {
+                ...
+                @Asynchronous
+                public Future&lt;String&gt; sendMessage(String email) {
+                    try {
+                        // Faça Algo...
+                        status = "Enviado";
+                    } catch (MessagingException ex) {
+                        status = "Erro no envio: " + ex.getMessage();
+                    }
+                    return new AsyncResult&lt;&gt;(status);
+                }
+            }
+        </code></pre>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        ## Sobre a Abordagem
+
+        ### Pontos Relevantes <!-- .element: class="titlemark" -->
+
+        - #### O contexto transacional não é propagado ao usar a invocação assíncrona
+        - #### Pode ser usado em qualquer tipo de bean de sessão
+        - #### O cliente pode cancelar a execução via API da interface <span class="code-red">Future</span>
+        - #### Essa abordagem não é tolerante à falhas ou quedas do container
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        ## Exercício 6
+
+
+        O procedimento de submissão das reservas da distribuidora necessita ser alterado para realizar
+        verificações de estoque entre os vários fornecedores. Ajuste-o para ser executado de forma assíncrona.
+        Confirme o resultado. <!-- .element: align="justify" -->
+    </script>
 </section>
 <section>
-    Message Driven Beans
+    <h2>Mensageria, JMS e MDBs</h2>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        ## Tópicos
+
+        - #### Arquitetura orientada a mensagens
+        - #### Modelos de troca de mensagem
+        - #### JMS
+        - #### MDBs
+    </script>
 </section>
 <section>
+    <h2>Arquitetura</h2>
+    <section data-markdown>
+        <script type="text/template">
+            - Mensagens integram os diversos componentes da aplicação
+            - Assincronia
+            - Facilita a distribuição
+            - Dificulta a lógica de programação e debug
+            - Centrado em um middleware (MOM)
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+        ![MoA]({{site.github.url}}/media/moa.png) <!-- .element: width="90%" -->
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+        ### Message Oriented Middleware (MOM) <!-- .element: class="titlemark" -->
+        ![Middleware]({{site.github.url}}/media/middleware.jpg) <!-- .element: width="90%" -->
+        </script>
+    </section>
+</section>
+<section>
+    <h2>Conceitos</h2>
+    <section>
+        <h3 class="titlemark">Emitente \ Produtor \ Publicador</h3><br />
+        <h4>Gerador de informação que será encaminhada para algum destino.</h4>
+    </section>
+    <section>
+        <h3 class="titlemark">Destinatário \ Consumidor \ Subscritor</h3><br />
+        <h4>Consumidor ou interessado em informação que é trafegada por um meio.</h4>
+    </section>
+    <section>
+        <h3 class="titlemark">Mensagem \ Evento</h3><br />
+        <h4>É estrutura que carrega a informação trafegada pelo meio de comunicação.</h4>
+    </section>
+    <section>
+        <h3 class="titlemark">Canal</h3><br />
+        <h4>Meio pelo qual a mensagem ou evento é trafegado entre o produtor, consumidor e as outras
+        estruturas do meio de comunicação.</h4>
+    </section>
+    <section>
+        <h3 class="titlemark">Fila</h3><br />
+        <h4>Estrutura capaz de abstrair a interação entre produtor e consumidor
+        armazenando mensagens para posterior consumo. Desassocia o envio do momento
+        do consumo da mensagem.</h4>
+    </section>
+    <section>
+        <h3 class="titlemark">Tópico</h3><br />
+        <h4>Estrutura lógica que relaciona um assunto a diversos consumidores desta informação.
+            Enquanto a fila se propõe (naturalmente) a uma relação <code>um - um</code> , o tópico
+            favorece um modelo <code>um - muitos .</code>.
+         </h4>
+    </section>
+</section>
+<section>
+    <section><h2>Modelos de Comunicação</h2></section>
+    <section data-markdown>
+        <script type="text/template">
+            ### Ponto a Ponto <!-- .element: class="titlemark" -->
+            ![Middleware]({{site.github.url}}/media/ponto_ponto.jpg) <!-- .element: width="90%" -->
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+            ### Publicação \ Subscrição <!-- .element: class="titlemark" -->
+            ![Middleware]({{site.github.url}}/media/pub_sub.jpg) <!-- .element: width="90%" -->
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+            ### Implementações <!-- .element: class="titlemark" -->
+
+            - #### Request `-` Reply
+            - #### Master `-` Worker
+            - #### Scatter `-` Gather
+            - #### Map `-` Reduce
+        </script>
+    </section>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        ## Exercício 7
+        ### Identifique as estruturas e o modelo de comunicação nos exemplos a seguir:
+        1. #### Estabelecimento de uma conexão FTP entre sua máquina e um servidor
+        2. #### O broadcast de pacotes UDP na sua LAN
+        3. #### A troca de um segredo entre duas amigas confidentes
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        ## JMS<br />
+        - #### Permite criar, enviar e receber mensagens <!-- .element: class="fragment" -->
+        - #### API define um conjunto de interfaces que desacoplam as aplicações dos provedores do serviço
+            <!-- .element: class="fragment" -->
+        - #### Garante assincronia e confiabilidade <!-- .element: class="fragment" -->
+        - #### Transacional <!-- .element: class="fragment" -->
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        ## JMS
+        ### Arquitetura <!-- .element: class="titlemark" -->
+        ![Middleware]({{site.github.url}}/media/jms.jpg) <!-- .element: width="60%" -->
+    </script>
+</section>
+<section>
+    <h2>JMS</h2>
+    <section data-markdown>
+        <script type="text/template">
+            ### Principais Conceitos <!-- .element: class="titlemark" -->
+            - #### Cliente JMS
+            - #### Provedor JMS
+            - #### Mensagem
+            - #### Objetos
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+            ### Modelo de Comunicação <!-- .element: class="titlemark" -->
+            - #### Ponto a Ponto
+            - #### Publicação / Subscrição
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+            ### Consumo de Mensagens <!-- .element: class="titlemark" -->
+            - #### Síncrono
+            - #### Assíncrono
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+            ### Estruturas de Programação <!-- .element: class="titlemark" -->
+            - #### `ConnectionFactory`
+            - #### `Connection`
+            - #### `Context`
+            - #### `Message Producers`
+            - #### `Message Consumers`
+            - #### `Queue` e `Topic`
+            - #### `Message`
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+            <br />
+            ### Estruturas de Programação <!-- .element: class="titlemark" -->
+            ![jms_pm]({{site.github.url}}/media/jms_pm.png) <!-- .element: width="70%" -->
+        </script>
+    </section>
+    <section>
+        <h3 class="titlemark">Produzindo mensagens</h3>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+            ### APIs anteriores <!-- .element: class="titlemark" -->
+            ```java
+                ...
+                @Resource("jms/Qcf")
+                QueueConnectionFactory factory;
+                ...
+                @Resource(lookup = "java:/jms/myQueue")
+                private Queue myQueue;
+                ...
+                Connection conn = factory.createConnection(...);
+                Session session = conn.createSesion(...);
+                session.createMessage(...);
+                session.CreateMessageProducer(...);
+                producer.sendMessage(message);
+            ```
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+            ## Java EE 7 <!-- .element: class="titlemark" -->
+            ```java
+                @Inject
+                @JMSConnectionFactory("java:/ConnectionFactory")
+                private JMSContext ctx;
+                ...
+                @Resource(lookup = "java:/jms/myQueue")
+                private Queue myQueue;
+                ...
+                ObjectMessage message = context.createObjectMessage();
+                // Faça algo com a mensagem
+            ```
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+            ## Resumindo... <!-- .element: class="titlemark" -->
+            1. #### Crie as estruturas JMS (filas, tópicos, fábricas, etc);
+            2. #### Injete o contexto JMS no seu Bean indicando a fábrica;
+            3. #### Use o contexto para criar a mensagem e o respectivo produtor;
+            4. #### Envie a mensagem para o destino adequado.
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+            <br>
+            ### Mensagem <!-- .element: class="titlemark" -->
+            ![jms_msg]({{site.github.url}}/media/jms_msg.jpg) <!-- .element: width="60%" -->
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+            ### Tipos de Mensagem <!-- .element: class="titlemark" -->
+             **Tipo**    | **Descrição**
+            ------------ | -------------
+            TextMessage  | Mensagem é um texto do tipo java.lang.String
+            MapMessage   | Um conjunto de pares chave - valor
+            ByteMessage  | Mensagem formada por bytes
+            ObjectMessage| Mensagem é um objeto serializado
+            StreamMessage| Mensagem é uma stream
+            Message      | Mensagem sem conteúdo
+        </script>
+    </section>
+</section>
+<section>
+    <h2>Qual a abordagem para consumir mensagens em uma aplicação Java EE?</h2>
+</section>
+<section>
+    <h2>Message Driven Beans</h2>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        ## MDBs
+        ### Definição <!-- .element: class="titlemark" -->
+        Bean corporativo que permite a execução de uma ação de forma assíncrona dentro de
+        um contexto transacional.
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        ## MDBs
+        ### Características <!-- .element: class="titlemark" -->
+        - #### Assincronia
+        - #### Multithreaded
+        - #### Sem estado
+        - #### Não são invocados diretamente, mas sim acionados pelo container
+        - #### Deve possuir construtor Padrão
+        - #### Implementa a interface `MessageListener`
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        ## MDBs
+        ### Quando usar? <!-- .element: class="titlemark" -->
+        - #### Ganho de taxa de processamento <!-- .element: class="fragment" -->
+        - #### Processamentos de longa duração <!-- .element: class="fragment" -->
+        - #### Desacoplar processo cliente do servidor <!-- .element: class="fragment" -->
+        - #### etc <!-- .element: class="fragment" -->
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        ## MDBs
+        ### Ciclo de Vida <!-- .element: class="titlemark" -->
+        ![MDB Life Cycle]({{site.github.url}}/media/mdb_lifecycle.png) <!-- .element: width="100%" -->
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        ## MDBs
+        ### `@MessageDriven` <!-- .element: class="titlemark" -->
+        **Atributo** | **Descrição**
+         ------------ | -------------
+         ActivationConfigProperty | Propriedades de ativação do Bean.
+         mappedName    | Nome global atribuído ao Bean. Não é portável.
+         description | Descrição do Bean.
+         MessageListenerInterface | Interface acionada quando da chegada de uma mensagem.
+         name | Nome atribuído ao EJB.
+    </script>
+</section>
+<section data-markdown>
+        <script type="text/template">
+            ## MDBs
+            ## Implementação <!-- .element: class="titlemark" -->
+            ```java
+                @MessageDriven(
+                    activationConfig = { @ActivationConfigProperty(
+                    propertyName = "destination", propertyValue = "myQueue"),
+                    @ActivationConfigProperty(
+                    propertyName = "destinationType", propertyValue = "javax.jms.Queue")
+                    }, mappedName = "myQueue")
+                public class ComprasMDB implements MessageListener {
+
+                public ComprasMDB() {...}
+
+                public void onMessage(Message message) {
+                    ObjectMessage objMessage = (ObjectMessage) message;
+                    // Processar a Mensagem
+                }
+            }
+        ```
+        </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        ## Exercício 8
+
+        Ajuste a comunicação assíncrona implementada no exercício 6 para que ela
+        seja realizada pelo MDB. Fique livre para utilizar o tipo de mensagem que desejar.
+    </script>
+</section>
+<!-- section>
     Entities e JPA
 </section>
 <section>
@@ -554,4 +916,4 @@ transition: slide
 </section>
 <section>
     Segurança
-</section>
+</section-->
