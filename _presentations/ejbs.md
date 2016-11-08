@@ -103,7 +103,7 @@ transition: slide
         <pre><code class="java">
             @WebServlet("/ReservaMercadoriaServlet")
             public class ReservaMercadoriaServlet extends HttpServlet {
-                @EJB ControladorSSB controle;
+                @Inject ControladorSSB controle;
             protected void doGet(...) {
                 String merc = request.getParameter(...);
                 int reservado = controle.obterQuantidade(merc);
@@ -135,7 +135,7 @@ transition: slide
         terá os dados do estoque</li>
         <li>Use os parâmetros do request para indicar a mercadoria e quantidade a ser reservada</li>
         <li>Utilize as anotações características do bean: <code style="color: red;">@Stateless</code> para
-        o Session e <code style="color: red;">@EJB</code> para injeção no servlet</li>
+        o Session e <code style="color: red;">@Inject</code> para injeção no servlet</li>
     </ol>
 </section>
 <section>
@@ -208,7 +208,7 @@ transition: slide
         - #### Instanciado uma única vez e mantido durante todo o ciclo de vida da aplicação
             <!-- .element: class="fragment" data-fragment-index="1" -->
         - #### Mantém o estado durante as chamadas <!-- .element: class="fragment" data-fragment-index="2" -->
-        - #### Alternativa a variáveis estáticas e servlets de inicialização
+        - #### Alternativa à variáveis estáticas e servlets de inicialização
             <!-- .element: class="fragment" data-fragment-index="3" -->
         - #### Também executa ações de "limpeza" durante o encerramento da aplicação
             <!-- .element: class="fragment" data-fragment-index="4" -->
@@ -249,7 +249,7 @@ transition: slide
 <section>
     <h2>Exercício 3</h2><br />
     <h4 align="left">O projeto da distribuidora necessita carregar informações de domínio sobre os fornecedores
-    e situação de produtos nos fornecedores. Crie um singleton session bean que carregue essas informações.</h4>
+    e situação de produtos nos fornecedores. Crie um singleton que carregue essas informações.</h4>
 </section>
 <section>
     <h1>Beans e Interfaces</h1>
@@ -261,7 +261,7 @@ transition: slide
             ## Formas de acesso <!-- .element: class="titlemark" -->
             - #### Métodos públicos da classe vs Interfaces
                 - ##### Porque usar interfaces?
-            - #### Interface local vs Remota
+            - #### Interface Local vs Remota
                 - ##### Quando utilizar?
         </script>
     </section>
@@ -269,7 +269,7 @@ transition: slide
         <script type="text/template">
             ## Formas de acesso <!-- .element: class="titlemark" -->
             * #### Métodos públicos da classe do bean
-                * ##### `@EJB`
+                * ##### `@Stateless` `-` `@Stateful`
             * #### Interface Local
                 - ##### `@local`
             * #### Interface Remota

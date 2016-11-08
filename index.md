@@ -144,10 +144,10 @@ ser feito aos pares conforme o quadro.
 
 **Framework**  | **Grupo**
 ---------------| -------------
-Play Framework |
+Play Framework | Fernando e Esdras
 Node.Js        |
 Grails         |
-Spring Boot    |
+Spring Boot    | Cadu e Lenderson
 Django         |
 Express.Js     |
 Backbone.Js    |
@@ -155,6 +155,7 @@ Rails          |
 VRaptor        |
 Flask          |
 Symfony        |
+ASP.NET MVC    |
 
 ### Projeto e Implementação de Aplicação
 TBD
