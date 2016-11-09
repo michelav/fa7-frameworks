@@ -26,7 +26,7 @@ corporativas utilizando _frameworks_ de mercado. Os tópicos programados para a 
   - Session Beans: _Stateless_ e _Stateful_
   - Message Driven Beans
   - Acesso a dados: JPA
-  - Outros serviços
+  - Transações
 - Introdução ao Spring
   - Injeção de Dependência e Inversão de Controle
   - Beans: Ciclo de vida e escopo
@@ -71,31 +71,31 @@ corporativas utilizando _frameworks_ de mercado. Os tópicos programados para a 
 <tr>
   <td class="date-cell"><date datetime="07-11-2016">07/11</date></td>
   <td class="agenda-cell">
-    Enterprise Java Beans
+    <a href="{{site.github.url}}/presentations/ejbs.html">Enterprise Java Beans</a>
+    <a href="{{site.github.url}}/pdfs/ejbs.pdf">(PDF)</a>
     <ul>
       <li>Session Beans</li>
+      <ul><li>Stateful e Singletons</li></ul>
     </ul>
-    Comunicação Assíncrona
+    </td>
+</tr>
+<tr>
+  <td class="date-cell"><date datetime="09-11-2016">09/11</date></td>
+  <td class="agenda-cell">
+    <a href="{{site.github.url}}/presentations/ejbs.html">Message Driven Beans</a>
+    <a href="{{site.github.url}}/pdfs/ejbs.pdf">(PDF)</a>
       <ul>
         <li>Modelos de comunicação</li>
         <li>JMS</li>
         <li>Message Driven Beans</li>
       </ul>
-  </td>
-</tr>
-<tr>
-  <td class="date-cell"><date datetime="09-11-2016">09/11</date></td>
-  <td class="agenda-cell">
-    Enterprise Java Beans
-    <ul>
-      <li>Message Driven Beans</li>
-    </ul>
-    Java EE - Persistência
+
+    <a href="{{site.github.url}}/presentations/persistencia.html">Java EE - Persistência</a>
+    <a href="{{site.github.url}}/pdfs/persistencia.pdf">(PDF)</a>
     <ul>
       <li>Entities e JPA</li>
-      <li>Frameworks de Persistência</li>
+      <li>Transações</li>
     </ul>
-    Java EE - Outros Serviços
   </td>
 </tr>
 <tr>
@@ -132,6 +132,7 @@ TBD
 
 # Avaliação
 <section id='trabalho' />
+
 Durante a disciplina, faremos duas avaliações da seguinte forma:
 
 1. Um seminário, a ser realizado em 23/11, em que discutiremos sobre tecnologias Server Side diversas;
@@ -142,20 +143,31 @@ O objetivo é entender basicamente os conceitos que existem naquela tecnologia \
 com outras existentes. É obrigatório implementar um exemplo mínimo. O seminário deverá
 ser feito aos pares conforme o quadro.
 
-**Framework**  | **Grupo**
+A apresentação terá duração de 20 minutos (extensão de 5 minutos para debates e dúvidas). E participação
+no seminário completo faz parte da avaliação, isto é, não vale apresentar e sair.
+
+Tópicos importantes a serem abordados na apresentação:
+
+* Qual  o foco \ nicho do framework;
+* Pontos fortes e fracos;
+* Comparação com o que discutimos na disciplina; e
+* Uma implementação. Afinal, somos técnicos. :-D
+
+
+**Framework**  | **Equipe**
 ---------------| -------------
 Play Framework | Fernando e Esdras
 Node.Js        |
 Grails         |
 Spring Boot    | Cadu e Lenderson
-Django         |
+Django         | Matheus
 Express.Js     |
 Backbone.Js    |
 Rails          |
 VRaptor        |
 Flask          |
 Symfony        |
-ASP.NET MVC    |
+ASP.NET MVC    | ALuísio e Benício
 
 ### Projeto e Implementação de Aplicação
 TBD
