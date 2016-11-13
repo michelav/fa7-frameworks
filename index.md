@@ -157,20 +157,20 @@ Tópicos importantes a serem abordados na apresentação:
 **Framework**  | **Equipe**
 ---------------| -------------
 Play Framework | Fernando e Esdras
-Node.Js        |
-Grails         |
+Node.Js        | Lucas e Djalma
+Grails         | Rafael e Sérgio
 Spring Boot    | Cadu e Lenderson
 Django         | Matheus
 Express.Js     |
 Backbone.Js    |
-Rails          |
-VRaptor        |
+Rails          | Bruno e Renato
+VRaptor        | Elker e Zacarias
 Flask          |
 Symfony        |
 ASP.NET MVC    | ALuísio e Benício
 
 ### Projeto e Implementação de Aplicação
-TBD
+Descrição do <a href="{{site.github.url}}/trabalho/requisitos.html">trabalho</a>.
 
 
 <!-- <div class="posts">

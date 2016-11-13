@@ -301,7 +301,7 @@ transition: slide
         <h3 class="titlemark">Boas práticas</h3>
         <ul>
             <li><h4>Usar DAOs somente quando necessário</h4></li>
-                <ul><li>DAO vs EntityController</li></ul>
+                <ul><li>DAO vs Repository</li></ul>
             <li><h4>As máximas do mundo SQL valem para as consultas JPQL</h4></li>
             <li><h4>Cuidado com as funcionalidades específicas do Provedor</h4></li>
             <li><h4>Tente usar NamedQuery sempre que possível</h4></li>

@@ -10,10 +10,14 @@
     </div>
 
     <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="#inicio">Inicio</a>
-      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="#programa">Programa</a>
-      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="#agenda">Agenda</a>
-      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="#trabalho">Trabalhos</a>
+      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{site.github.url}}/#inicio">
+      Inicio</a>
+      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{site.github.url}}/#programa">
+      Programa</a>
+      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{site.github.url}}/#agenda">
+      Agenda</a>
+      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{site.github.url}}/#trabalho">
+      Trabalhos</a>
 <!--       {% comment %}
         The code below dynamically generates a sidebar nav of pages with
         `layout: page` in the front-matter. See readme for usage.
