@@ -101,7 +101,8 @@ corporativas utilizando _frameworks_ de mercado. Os tópicos programados para a 
 <tr>
   <td class="date-cell"><date datetime="16-11-2016">16/11</date></td>
   <td class="agenda-cell">
-    Introdução ao Spring
+    <a href="{{site.github.url}}/presentations/spring.html">Introdução ao Spring</a>
+    <a href="{{site.github.url}}/pdfs/spring.pdf">(PDF)</a>
     <ul>
       <li>Injeção de Dependência e Inversão de Controle</li>
       <li>Beans: Ciclo de vida e escopo</li>
