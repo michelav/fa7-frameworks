@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="simples" class="fa7.distribuidora.FornecedorSimples">
+		<property name="taxa" value="1.1" />
+	</bean>
+	<bean id="aleatorio" class="fa7.distribuidora.FornecedorAleatorio">
+		<constructor-arg index="0" value="0.9"/>
+		<constructor-arg index="1" value="1.5"/>
+	</bean>
+	
+	<bean id="distribuidora" class="fa7.distribuidora.Distribuidora">
+		<constructor-arg>
+			<list>
+				<ref bean="simples"/>
+				<ref bean="aleatorio"/>
+			</list>		
+		</constructor-arg>
+	</bean>
+</beans>

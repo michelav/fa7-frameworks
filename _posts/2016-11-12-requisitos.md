@@ -19,7 +19,6 @@ A lista continua ativa até que ele a submeta para o sistema. Após a submissão
 os livros estão disponíveis na biblioteca. Caso haja algum caso de indisponibilidade, a reserva é concluída
 sem o livro em questão.
 
-
 ### O processo de aquisição
 O processo de aquisição de novos livros é realizado em duas etapas. Na primeira etapa,
 os usuários do sistema indicam suas sugestões de novos livros a serem adquiridos.
@@ -55,11 +54,14 @@ Livro 4 | 0
 
 ## Trabalho
 
+#### Descrição
+
 1. Implementar, utilizando as tecnologias da especificação JavaEE, as seguintes
 funcionalidades:
-    - Listagem básica de livros e suas quantidades;
-    - Procedimento de reserva de livros;
-    - Procedimento sugestão e pedido de aquisição de livros.
+    - Listagem básica de livros e suas quantidades (2 pt);
+    - Procedimento de reserva de livros (3 pt);
+    - Procedimento sugestão e pedido de aquisição de livros (5 pt).
+
 2. Implementar, utilizando o _framework_ Spring, o processo de aquisição de livros
 que compete à distribuidora.
 
@@ -69,10 +71,27 @@ que compete à distribuidora.
     - Explicar as decisões de design tomadas no procedimento de reserva;
     - Explicar as decisões de design tomadas no procedimento de aquisição.
 
-O trabalho poderá ser disponibilizado das seguintes formas:
+#### Ferramentas
+- Servidor de aplicação Wildfly
+- Serviço de mensagens: ActiveMQ
+- Banco de Dados: Postgresql
+- Eclipse Neon e STS
 
-1. E-mail com um zip contendo os projetos de implementação e um pdf contendo os diagramas e as explanações;
-2. Um repositório no github com os projetos de implementação e o pdf contendo os diagramas e as explanações.
+#### Entrega
+
+O trabalho poderá ser enviado na forma de um arquivo zip por e-mail para
+[michel.vasconcelos@gmail.com](mailto:michel.vasconcelos@gmail.com) ou  um repositório github. O projeto
+deverá ser organizado da seguinte forma:
+
+- Pasta docs contendo os pdfs com os diagramas e decisões de design das 3 funcionalidades
+(listagem, reserva e aquisição);
+- Pasta projs contendo os projetos de implementação.
+
+Vale ressaltar que qualquer estrutura (filas, BDs, tabelas, etc) que precise ser criada deverá
+ser denotada em um arquivo README na pasta projs. Por exemplo, se for
+necessário criar uma fila para transferência de mensagens, indicar o nome físico e JNDI da fila.
+
+#### Datas
 
 O Trabalho deverá ser feito por equipes de (no máximo e desejável) duas pessoas.
-**A data / hora máxima de entrega será 11/12/2016 23:59:59** .
+**A data / hora máxima de entrega será 09/12/2016 23:59:59** .

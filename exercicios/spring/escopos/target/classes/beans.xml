@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="m1" class="test.Mensagem" scope="singleton">
+        <property name="texto" value="Mensagem 1"/>
+    </bean>
+
+    <bean id="m2" class="test.Mensagem" scope="prototype">
+        <property name="texto" value="Mensagem 2"/>
+    </bean>
+
+</beans>
