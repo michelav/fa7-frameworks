@@ -113,7 +113,8 @@ corporativas utilizando _frameworks_ de mercado. Os tópicos programados para a 
 <tr>
   <td class="date-cell"><date datetime="21-11-2016">21/11</date></td>
   <td class="agenda-cell">
-    Introdução ao Spring
+    <a href="{{site.github.url}}/presentations/spring.html">Introdução ao Spring</a>
+    <a href="{{site.github.url}}/pdfs/spring.pdf">(PDF)</a>
     <ul>
       <li>Anotações</li>
       <li>Serviços: AOP, controle de transações, etc</li>
@@ -157,18 +158,15 @@ Tópicos importantes a serem abordados na apresentação:
 
 **Framework**  | **Equipe**
 ---------------| -------------
-Play Framework | Fernando e Esdras
-Node.Js        | Lucas e Djalma
-Grails         | Rafael e Sérgio
+Spring MVC     | Dênis
 Spring Boot    | Cadu e Lenderson
-Django         | Matheus
-Express.Js     |
-Backbone.Js    |
+Play Framework | Fernando e Esdras
+VRaptor        | Helker e Zacarias
+Grails         | Rafael e Sérgio
 Rails          | Bruno e Renato
-VRaptor        | Elker e Zacarias
-Flask          |
-Symfony        |
-ASP.NET MVC    | ALuísio e Benício
+Node.Js        | Lucas e Djalma
+Django         | Matheus
+ASP.NET MVC    | Aluísio e Benício
 
 ### Projeto e Implementação de Aplicação
 Descrição do <a href="{{site.github.url}}/trabalho/requisitos.html">trabalho</a>.

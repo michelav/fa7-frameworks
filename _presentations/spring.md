@@ -514,6 +514,39 @@ transition: slide
     <h3 class="titlemark">Singleton vs Prototype</h3>
 </section>
 <section>
+    <h2>Escopo customizado</h2>
+    <section>
+        <ul>
+        <li>
+          <h4>Implementar a interface <span class="code">org.springframework.beans.factory.config.Scope</span></h4>
+        </li>
+            <ul>
+                <li><h5><span class="code-red">Object get(String name, ObjectFactory objectFactory)</span></h5></li>
+                <li><h5><span class="code-red">Object remove(String name)</span></h5></li>
+            </ul>
+        </ul>
+    </section>
+    <section>
+        <h3 class="titlemark">Registro o escopo</h3>
+        <pre><code class="java">
+            Scope threadScope = new SimpleThreadScope();
+            beanFactory.registerScope("thread", threadScope);
+        </code></pre>
+        <br />
+        <pre><code class="xml" data-trim data-noescape>
+        &lt;bean class="org.springframework.beans.factory.config.CustomScopeConfigurer"&gt;
+    &lt;property name="scopes"&gt;
+        &lt;map&gt;
+            &lt;entry key="thread"&gt;
+                &lt;bean class="org.springframework.SimpleThreadScope"/&gt;
+            &lt;/entry&gt;
+        &lt;/map&gt;
+    &lt;/property&gt;
+&lt;/bean&gt;
+    </code></pre>
+    </section>
+</section>
+<section>
     <h2>Exercício 4</h2>
     <h4>Importem e executem o projeto escopo disponível no repositório ou pasta da rede.</h4>
 </section>
@@ -594,7 +627,7 @@ transition: slide
     </section>
     <section data-markdown>
         <script type="text/template">
-            ### <span class="code">@Component</span> <!-- .element class="titlemark" -->
+            ### <span class="code titlemark">@Component</span>
             - #### Outras formas de declarar um bean como gerenciado:
                 - ##### <span class="code">@Service</span>
                 - ##### <span class="code">@Controller</span>
@@ -620,3 +653,386 @@ transition: slide
     <h2>Exercício 5</h2>
     <h4>Modifique o projeto da distribuidora para utilizar anotações durante o autowiring.</h4>
 </section>
+<section>
+    <h2>Configuração programática</h2>
+</section>
+<section>
+    <h2>Configuração programática</h2>
+    <section>
+        <h3 class="titlemark"><span class="code">@Configuration</span> e
+            <span class="code">@Bean</span></h3>
+    </section>
+    <section>
+        <h3 class="titlemark"><span class="code">@Configuration</span></h3>
+        <ul>
+            <li><h4>Indica que o propósito da classe é definir um conjunto de beans</h4></li>
+            <ul>
+                <li><span class="code">@ComponentScan</span> - Indica pacotes para procura de definições</li>
+            </ul>
+        </ul>
+        <pre><code class="java">
+        @Configuration
+        @ComponentScan(basePackages = "com.acme")
+        public class AppConfig  {...}
+        </code></pre>
+    </section>
+    <section>
+        <h3 class="titlemark"><span class="code">@Bean</span></h3>
+        <ul>
+            <li><h4>Indica que o método cria e configura um objeto gerenciado pelo container</h4></li>
+            <li><h4>Interdependências são denotadas pela execução de um outro método anotado com
+                <span class="code">@Bean</span></h4></li>
+            <li><h4>Full-mode vs Lite-mode</h4></li>
+        </ul>
+    </section>
+    <section>
+    <br />
+    <h4 class="titlemark">Full Mode</h4>
+        <pre><code class="java">
+         @Configuration
+         public class AppConfig {
+             @Bean
+             public Service service() { return new MyService(repository()); }
+             ...
+             @Bean
+             public Repository repository() { return new JdbcRepository(ds()); }
+         }
+        </code></pre>
+        <h4 class="titlemark">Lite Mode</h4>
+        <pre><code class="java">
+         public class MyComponent {
+             @Bean
+             public Service service() { return new MyService(repository()); }
+             ...
+             @Bean
+             public Repository repository() { return new JdbcRepository(ds()); }
+         }
+        </code></pre>
+    </section>
+    <section>
+        <br /><br />
+        <h3 class="titlemark">Construindo o contexto</h3>
+        <pre><code class="java">
+        public static void main(String[] args) {
+            ApplicationContext ctx = new
+                AnnotationConfigApplicationContext(AppConfig.class);
+            MyService myService = ctx.getBean(MyService.class);
+            myService.doStuff();
+        }
+        </code></pre>
+        <br />
+        <pre><code class="java">
+        public static void main(String[] args) {
+            AnnotationConfigApplicationContext ctx =
+                new AnnotationConfigApplicationContext();
+            ctx.register(AppConfig.class, OtherConfig.class);
+            ctx.register(AdditionalConfig.class);
+            ctx.refresh();
+            MyService myService = ctx.getBean(MyService.class);
+            myService.doStuff();
+        }
+        </code></pre>
+    </section>
+</section>
+<section>
+    <h2>Spring AOP</h2>
+</section>
+<section>
+    <h2>Spring AOP</h2>
+    <section data-markdown>
+    <script type="text/template">
+        ### Conceitos <!-- .element class="titlemark" -->
+        - #### Aspecto
+        - #### Join Point
+        - #### Advice
+        - #### Pointcut
+        - #### Introduction
+        - #### Weaving
+            - ##### Compilação vs Carga vs Execução
+    </script>
+    </section>
+    <section data-markdown>
+    <script type="text/template">
+        ### Advices <!-- .element class="titlemark" -->
+        - #### Before
+        - #### After returning
+        - #### After throwing
+        - #### After (finally)
+        - #### Around
+    </script>
+    </section>
+    <section data-markdown>
+    <script type="text/template">
+        ### Pointcuts <!-- .element class="titlemark" -->
+        - #### execution
+        - #### within
+        - #### this
+        - #### target
+        - #### args
+    </script>
+    </section>
+    <section>
+        <h3 class="titlemark">Exemplo</h3>
+        <pre><code class="aspectj">
+        @Aspect
+        public class SystemArchitecture {
+            @Pointcut("within(com.xyz.someapp.web..*)")
+            public void inWebLayer() {}
+            ...
+            @Pointcut("within(com.xyz.someapp.service..*)")
+            public void inServiceLayer() {}
+            ...
+            @Pointcut("execution(* com.xyz.someapp..service.*.*(..))")
+            public void businessService() {}
+            ...
+            @AfterReturning(
+            pointcut="com.xyz.myapp.SystemArchitecture.businessService()")
+            public void log() {...}
+        }
+        </code></pre>
+    </section>
+    <section>
+        <h3 class="titlemark">Habilitando...</h3>
+        <h4>Por anotações</h4>
+        <pre><code class="java">
+        @Configuration
+        @EnableAspectJAutoProxy
+        public class AppConfig {...}
+        </code></pre>
+        <h4>Por XML</h4>
+        <pre><code class="xml">
+        &lt;aop:aspectj-autoproxy/&gt;
+        </code></pre>
+    </section>
+</section>
+<section>
+    <h2>Gerenciando Transações</h2>
+</section>
+<section>
+    <h2>Contexto Transacional</h2>
+    <section>
+        <h3 class="titlemark">Global vs Local</h3>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+        ### Contexto Transacional JavaEE <!-- .element class="titlemark" -->
+        - #### Programático ou declarativo
+        - #### Depende do container e JTA
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+        ### Contexto Transacional Spring <!-- .element class="titlemark" -->
+        - #### Não depende de EJB \ Container \ API
+        - #### Programático ou declarativo
+            - ##### <span class="code-red">PlatformTransactionManager</span>
+            - ##### <span class="code-red">@Transactional</span>
+        </script>
+    </section>
+    <section>
+        <h3 class="titlemark"><span class="code">PlatformTransactionManager</span></h3>
+        <pre><code class="java">
+        public interface PlatformTransactionManager {
+            TransactionStatus getTransaction(
+                    TransactionDefinition definition) throws TransactionException;
+            void commit(TransactionStatus status) throws TransactionException;
+            void rollback(TransactionStatus status) throws TransactionException;
+        }
+        </code></pre>
+    </section>
+    <section>
+        <h3 class="titlemark"><span class="code">TransactionStatus</span></h3>
+        <pre><code class="java">
+        public interface TransactionStatus extends SavepointManager {
+            boolean isNewTransaction();
+            boolean hasSavepoint();
+            void setRollbackOnly();
+            boolean isRollbackOnly();
+            void flush();
+            boolean isCompleted();
+        }
+        </code></pre>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+        ### <span class="code titlemark">@Transactional</span>
+        **Propriedade** | **Descrição**
+        ----------------|--------------
+        value | Qualificador opcional
+        propagation | Propagação da transação
+        isolation | Nível de isolamento
+        readOnly | Transação é readOnly
+        timeout | Tempo de timeout
+        </script>
+    </section>
+    <section>
+        <h3 class="titlemark"><span class="code">@Transactional</span></h3>
+        <pre><code class="java">
+        @Transactional(readOnly = true)
+        public class DefaultFooService implements FooService {
+            public Foo getFoo(String fooName) {...}
+            ...
+            // these settings have precedence for this method
+            @Transactional(readOnly = false,
+                propagation = Propagation.REQUIRES_NEW)
+            public void updateFoo(Foo foo) {...}
+        }
+        </code></pre>
+    </section>
+    <section>
+        <h3 class="titlemark">Definindo o TM</h3>
+    </section>
+    <section>
+        <h3 class="titlemark">XML</h3>
+        <pre><code class="xml" data-trim>
+&lt;bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"&gt;
+    &lt;property name="driverClassName" value="${jdbc.driverClassName}" /&gt;
+    &lt;property name="url" value="${jdbc.url}" /&gt;
+    &lt;property name="username" value="${jdbc.username}" /&gt;
+    &lt;property name="password" value="${jdbc.password}" /&gt;
+&lt;/bean&gt;
+&lt;bean id="txManager"&gt;
+    class="org.springframework.jdbc.datasource.DataSourceTransactionManager"&gt;
+    &lt;property name="dataSource" ref="dataSource"/&gt;
+&lt;/bean&gt;
+        </code></pre>
+    </section>
+    <section>
+        <h3 class="titlemark">Anotações</h3>
+        <h4><span class="code">@EnableTransactionManagement</span></h4>
+        <pre><code class="java" data-trim>
+@Configuration
+@EnableTransactionManagement
+public class TransactionManagersConfig {
+    @Autowired
+    EntityManagerFactory emf;
+    @Autowired
+    private DataSource dataSource;
+    ...
+    @Bean(name = "transactionManager")
+    public PlatformTransactionManager transactionManager() {
+        JpaTransactionManager tm =
+            new JpaTransactionManager();
+            tm.setEntityManagerFactory(emf);
+            tm.setDataSource(dataSource);
+        return tm;
+    }
+}
+        </code></pre>
+    </section>
+</section>
+<section>
+    <h2>Mensageria</h2>
+</section>
+<section>
+    <h2>Spring - JMS</h2>
+    <section data-markdown>
+        <script type="text/template">
+            - #### Produção de Mensagens: <span class="code">JmsTemplate</span>
+                - ##### Síncrono
+            - #### Message-Driven POJOs (MDPs)
+                - ##### Message Listener Containers
+                - ##### Assíncrono
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+            ### <span class="code titlemark">JmsTemplate</span>
+            - #### Abstrai a criação das estruturas JMS (sessão, conexão, etc)
+                1. ##### Configurar a ConnectionFactory
+                2. ##### Implementar interface adequada para o tratamento da mensagem
+                    - ##### MessageCreator, SessionCallback, ProducerCallback
+        </script>
+    </section>
+    <section>
+        <h3 class="titlemark">Exemplo</h3>
+        <pre><code class="java">
+        @Component
+        public class MessageSender {
+            @Autowired
+            JmsTemplate template;
+            ...
+           public void sendMessage(String message)  {
+                template.send(new MessageCreator() {
+                    public Message createMessage(Session session) {
+                        return session.createTextMessage(message);
+                    }
+                });
+            }
+        }
+        </code></pre>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+            ### <span class="code titlemark">MDPs</span>
+            - #### Conecta a uma fila ou tópico de forma assíncrona
+                1. ##### Configurar o Listener Container
+                1. ##### Configurar e injetar a ConnectionFactory
+                2. ##### Anotar o método que processa a mensagem
+                    - ##### <span class="code">@JmsListener</span>
+        </script>
+    </section>
+    <section>
+        <h3 class="titlemark">Exemplo</h3>
+        <pre><code class="java">
+        @Component
+        public class MessageProcessor {
+            ...
+            @JmsListener(destination="in-queue",
+                containerFactory="jmsListenerContainerFactory")
+            public void processMessage(TextMessage message) {
+                System.out.println("Texto Recebido: " + message.getText());
+                ...
+            }
+        }
+        </code></pre>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+            ### <span class="code titlemark">Configurando a App</span>
+            1. ##### Criar a classe de configuração
+            2. ##### Utilizar as anotações <span class="code">@Configuration</span> e <span class="code">EnableJms</span>
+            3. ##### Realizar o scan nos beans da aplicação: <span class="code">@ComponentScan</span>
+        </script>
+    </section>
+    <section>
+        <h3 class="titlemark">Exemplo</h3>
+        <pre><code class="java" data-trim>
+@Configuration
+@ComponentScan(basePackages="fa7")
+@EnableJms
+public class AppConfig {
+    @Bean
+    public ActiveMQConnectionFactory connectionFactory(){
+        ActiveMQConnectionFactory connectionFactory =
+            new ActiveMQConnectionFactory();
+        connectionFactory.setBrokerURL("tcp://localhost:61616");
+        return connectionFactory;
+    }
+    ...
+    @Bean
+    public DefaultJmsListenerContainerFactory jmsListenerContainerFactory() {
+        DefaultJmsListenerContainerFactory factory =
+            new DefaultJmsListenerContainerFactory();
+        factory.setConnectionFactory(connectionFactory());
+        factory.setConcurrency("1-1");
+        return factory;
+    }
+    ...
+    @Bean
+    public JmsTemplate jmsTemplate(){
+        JmsTemplate template = new JmsTemplate();
+        template.setConnectionFactory(connectionFactory());
+        template.setDefaultDestinationName("out-queue");
+        return template;
+    }
+}
+        </code></pre>
+    </section>
+    <section>
+        <h3 class="titlemark">Importante</h3>
+        <h4>As anotações fazem parte da versão mais recente do Spring. Lembre-se de
+        configurar o projeto Maven adequadamente.</h4>
+    </section>
+</section>
+
