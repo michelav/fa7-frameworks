@@ -156,17 +156,17 @@ Tópicos importantes a serem abordados na apresentação:
 * Uma implementação. Afinal, somos técnicos. :-D
 
 
-**Framework**  | **Equipe**
----------------| -------------
-Spring MVC     | Dênis
-Spring Boot    | Cadu e Lenderson
-Play Framework | Fernando e Esdras
-VRaptor        | Helker e Zacarias
-Grails         | Rafael e Sérgio
-Rails          | Bruno e Renato
-Node.Js        | Lucas e Djalma
-Django         | Matheus
-ASP.NET MVC    | Aluísio e Benício
+**Horário** | **Framework**  | **Equipe**
+------------|---------------| -------------
+19:00       | Spring MVC     | Dênis
+19:25       | Spring Boot    | Cadu e Lenderson
+19:50       | Play Framework | Fernando e Esdras
+20:15       | Node.Js        | Lucas e Djalma
+20:40       | VRaptor        | Helker e Zacarias
+21:05       | Grails         | Rafael e Sérgio
+21:30       | Rails          | Bruno e Renato
+21:55       | Django         | Matheus
+22:20       | ASP.NET MVC    | Aluísio e Benício
 
 ### Projeto e Implementação de Aplicação
 Descrição do <a href="{{site.github.url}}/trabalho/requisitos.html">trabalho</a>.
