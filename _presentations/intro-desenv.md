@@ -41,10 +41,11 @@ transition: slide
     <h2>Informações</h2>
     <section>
         <h4 align="left">As informações sobre o curso estarão disponíveis no meu repositório GitHub</h4>
-        <h4 align="left"><a href="https://github.com/michelav/fa7-frameworks">
-        https://github.com/michelav/fa7-frameworks</a></h4>
+        <h4 align="left"><a href="https://github.com/michelav/uni7-frameworks">
+        https://github.com/michelav/uni7-frameworks</a></h4>
     </section>
-    <section><h4 align="left">A avaliação será feita por meio de um trabalho a ser definido oportunamente</h4></section>
+    <section><h4 align="left">A avaliação será feita por meio de um trabalho e seminário. Ambos serão definidos
+     oportunamente</h4></section>
     <section>
     <h3 class="titlemark">Referências</h3>
         <ul>
