@@ -137,7 +137,7 @@ TBD
 
 Durante a disciplina, faremos duas avaliações da seguinte forma:
 
-1. Um seminário, a ser realizado em 23/11, em que discutiremos sobre tecnologias Server Side diversas;
+1. Um seminário, a ser realizado em 18/10, em que discutiremos sobre tecnologias Server Side diversas;
 2. O design e implementação de um projeto de integração entre aplicações Java.
 
 ### Seminário
@@ -158,15 +158,14 @@ Tópicos importantes a serem abordados na apresentação:
 
 **Horário** | **Framework**  | **Equipe**
 ------------|---------------| -------------
-19:00       | Spring MVC     | Dênis
-19:25       | Spring Boot    | Cadu e Lenderson
-19:50       | Play Framework | Fernando e Esdras
-20:15       | Node.Js        | Lucas e Djalma
-20:40       | VRaptor        | Helker e Zacarias
-21:05       | Grails         | Rafael e Sérgio
-21:30       | Rails          | Bruno e Renato
-21:55       | Django         | Matheus
-22:20       | ASP.NET MVC    | Aluísio e Benício
+            | Spring Boot    |
+            | Play Framework |
+            | Node.Js        |
+            | VRaptor        |
+            | Grails         |
+            | Rails          |
+            | Django         |
+            | ASP.NET MVC    |
 
 ### Projeto e Implementação de Aplicação
 Descrição do <a href="{{site.github.url}}/trabalho/requisitos.html">trabalho</a>.

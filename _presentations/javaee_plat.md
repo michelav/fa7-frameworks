@@ -84,11 +84,6 @@ transition: slide
     <img width="20%" src="{{site.github.url}}/media/was.jpg">
     <img width="20%" src="{{site.github.url}}/media/wildfly.png">
 </section>
-<section>
-    <h2>Glassfish</h2><br>
-    <img class="stretch" src="{{site.github.url}}/media/glassfish_admin.png">
-</section>
-
 <section><h2>Serviços Básicos</h2></section>
 <section>
     <h2>Invocação Remota</h2>
@@ -269,17 +264,9 @@ transition: slide
 <section>
     <h3 class="titlemark">Dicas</h3>
     <ol>
-        <li>Crie o servidor Glassfish</li>
+        <li>Crie o servidor de aplicação</li>
         <li>Importe o projeto distribuidora que se encontra na pasta de exercícios</li>
         <li>User as anotações <code style="color: red">@Inject</code> e
         <code style="color: red">RequestScoped</code></li>
     </ol>
-</section>
-<section>
-    <section><h2>Criando o servidor</h2></section>
-    <section><img width="120%" src="{{site.github.url}}/media/glassfish/create_server01.png"></section>
-    <section><img width="70%" src="{{site.github.url}}/media/glassfish/create_server02.png"></section>
-    <section><img width="70%" src="{{site.github.url}}/media/glassfish/create_server03.png"></section>
-    <section><img width="70%" src="{{site.github.url}}/media/glassfish/create_server04.png"></section>
-    <section><img width="70%" src="{{site.github.url}}/media/glassfish/create_server05.png"></section>
 </section>

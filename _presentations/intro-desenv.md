@@ -7,7 +7,7 @@ transition: slide
 ---
 
 <section data-markdown>
-    # Desenvolvimento com _frameworks_ e componentes
+    # Dev com frameworks e componentes
 </section>
 <section><h2>Apresentações</h2></section>
 <section>
@@ -47,13 +47,13 @@ transition: slide
     <section><h4 align="left">A avaliação será feita por meio de um trabalho a ser definido oportunamente</h4></section>
     <section>
     <h3 class="titlemark">Referências</h3>
-        <img src="{{site.github.url}}/media/MasteringEJB.jpg">
-        <img width="25%" src="{{site.github.url}}/media/ejb_inaction.jpg">
-    </section>
-        <section>
-    <h3 class="titlemark">Referências</h3><br>
-        <h4><a href="http://stackoverflow.com">Stack Overflow</a></h4>
-        <h4><a href="http://docs.oracle.com/javaee/7/index.html">Java EE Docs</a></h4>
+        <ul>
+            <li>Mastering EJBs</li>
+            <li>EJB in Action</li>
+            <li>Spring in Action</li>
+            <li>Stack Overflow</li>
+            <li>Google is your friend...</li>
+        </ul>
     </section>
 </section>
 <section>
@@ -94,10 +94,6 @@ transition: slide
         </ul>
         <p  align="left" class="titlemark">Aplicações eram verdadeiras "ilhas".</p>
     </section>
-</section>
-<section>
-    <h2>Concluindo...</h2>
-    <section><img class="fragment" width="80%" src="{{site.github.url}}/media/fail.png" /></section>
 </section>
 <section>
     <h2> E agora... Como escalar e interoperar?</h2>
