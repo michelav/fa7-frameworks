@@ -12,7 +12,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Site do conteúdo da disciplina de especialização da FA7 sobre Desenvolvimento
   Corporativo com frameworks e componentes.
 baseurl: "/uni7-frameworks" # the subpath of your site, e.g. /blog
-url: "http://michelav.github.io/fa7-frameworks" # the base hostname & protocol for your site
+url: "http://michelav.github.io/uni7-frameworks" # the base hostname & protocol for your site
 # twitter_username: jekyllrb
 # github_username:  jekyll
 plugins: [jekyll-paginate]

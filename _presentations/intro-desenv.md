@@ -36,7 +36,7 @@ transition: slide
     </section>
     <section><h3 class="titlemark">E o mais importante...</h3></section>
 </section>
-<section><h2>Divertir-se!</h2><img class='stretch' src="{{site.github.url}}/media/programmer_matrix.jpg" /></section>
+<section><h2>Divertir-se!</h2><img class='stretch' src="{{site.baseurl}}/media/programmer_matrix.jpg" /></section>
 <section>
     <h2>Informações</h2>
     <section>
@@ -59,7 +59,7 @@ transition: slide
 </section>
 <section>
     <h2>Boom dos anos 80 e 90...</h2>
-    <img class='stretch' src="{{site.github.url}}/media/client-server.jpg" />
+    <img class='stretch' src="{{site.baseurl}}/media/client-server.jpg" />
     <aside class="notes">Falar sobre downsizing e como isso impactou o desenvolvimento das aplicações. Aplicações
     centralizadas em um Mainframe vs Aplicações em PC</aside>
 </section>
@@ -101,7 +101,7 @@ transition: slide
 </section>
 <section>
     <h2>Componentização</h2>
-    <img class="stretch" src="{{site.github.url}}/media/components.png" />
+    <img class="stretch" src="{{site.baseurl}}/media/components.png" />
 </section>
 <section>
     <h2>Componente</h2>
@@ -119,7 +119,7 @@ transition: slide
     </section>
 </section>
 <section>
-        <img class="stretch" src="{{site.github.url}}/media/circuit-board.png">
+        <img class="stretch" src="{{site.baseurl}}/media/circuit-board.png">
 </section>
 <section>
     <h3>Componentes de software demandam</h3>
@@ -167,7 +167,7 @@ transition: slide
         <h3 class="titlemark">E o que Java tem com isso?!</h3>
         <p>A plataforma JEE tornou-se a proposta adequada para desenvolvimento de aplicações
         corporativas em Java.</p>
-        <a href="{{site.github.url}}/presentations/javaee_plat.html">
-        <img width="15%" src="{{site.github.url}}/media/javaee_logo.png"></a>
+        <a href="{{site.baseurl}}/presentations/javaee_plat.html">
+        <img width="15%" src="{{site.baseurl}}/media/javaee_logo.png"></a>
     </section>
 </section>

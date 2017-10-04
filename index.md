@@ -46,21 +46,21 @@ corporativas utilizando _frameworks_ de mercado. Os tópicos programados para a 
 <tr>
   <td class="date-cell"><date datetime="31-10-2016">31/10</date></td>
   <td class="agenda-cell">
-    <a href="{{site.github.url}}/presentations/intro-desenv.html">Desenvolvimento corporativo</a>
-    <a href="{{site.github.url}}/pdfs/intro-desenv.pdf">(PDF)</a>
+    <a href="{{site.baseurl}}/presentations/intro-desenv.html">Desenvolvimento corporativo</a>
+    <a href="{{site.baseurl}}/pdfs/intro-desenv.pdf">(PDF)</a>
     <ul>
       <li>Histórico</li>
       <li>Principais conceitos</li>
     </ul>
-    <a href="{{site.github.url}}/presentations/javaee_plat.html">Plataforma Java EE</a>
-    <a href="{{site.github.url}}/pdfs/javaee_plat.pdf">(PDF)</a>
+    <a href="{{site.baseurl}}/presentations/javaee_plat.html">Plataforma Java EE</a>
+    <a href="{{site.baseurl}}/pdfs/javaee_plat.pdf">(PDF)</a>
     <ul>
       <li>O que é a plataforma e histórico</li>
       <li>Containers</li>
       <li>Principais serviços</li>
     </ul>
-    <a href="{{site.github.url}}/presentations/ejbs.html">Enterprise Java Beans</a>
-    <a href="{{site.github.url}}/pdfs/ejbs.pdf">(PDF)</a>
+    <a href="{{site.baseurl}}/presentations/ejbs.html">Enterprise Java Beans</a>
+    <a href="{{site.baseurl}}/pdfs/ejbs.pdf">(PDF)</a>
     <ul>
       <li>Conceitos e tipos</li>
       <li>Modelo de componentes e arquitetura</li>
@@ -71,8 +71,8 @@ corporativas utilizando _frameworks_ de mercado. Os tópicos programados para a 
 <tr>
   <td class="date-cell"><date datetime="07-11-2016">07/11</date></td>
   <td class="agenda-cell">
-    <a href="{{site.github.url}}/presentations/ejbs.html">Enterprise Java Beans</a>
-    <a href="{{site.github.url}}/pdfs/ejbs.pdf">(PDF)</a>
+    <a href="{{site.baseurl}}/presentations/ejbs.html">Enterprise Java Beans</a>
+    <a href="{{site.baseurl}}/pdfs/ejbs.pdf">(PDF)</a>
     <ul>
       <li>Session Beans</li>
       <ul><li>Stateful e Singletons</li></ul>
@@ -82,16 +82,16 @@ corporativas utilizando _frameworks_ de mercado. Os tópicos programados para a 
 <tr>
   <td class="date-cell"><date datetime="09-11-2016">09/11</date></td>
   <td class="agenda-cell">
-    <a href="{{site.github.url}}/presentations/ejbs.html">Message Driven Beans</a>
-    <a href="{{site.github.url}}/pdfs/ejbs.pdf">(PDF)</a>
+    <a href="{{site.baseurl}}/presentations/ejbs.html">Message Driven Beans</a>
+    <a href="{{site.baseurl}}/pdfs/ejbs.pdf">(PDF)</a>
       <ul>
         <li>Modelos de comunicação</li>
         <li>JMS</li>
         <li>Message Driven Beans</li>
       </ul>
 
-    <a href="{{site.github.url}}/presentations/persistencia.html">Java EE - Persistência</a>
-    <a href="{{site.github.url}}/pdfs/persistencia.pdf">(PDF)</a>
+    <a href="{{site.baseurl}}/presentations/persistencia.html">Java EE - Persistência</a>
+    <a href="{{site.baseurl}}/pdfs/persistencia.pdf">(PDF)</a>
     <ul>
       <li>Entities e JPA</li>
       <li>Transações</li>
@@ -101,8 +101,8 @@ corporativas utilizando _frameworks_ de mercado. Os tópicos programados para a 
 <tr>
   <td class="date-cell"><date datetime="16-11-2016">16/11</date></td>
   <td class="agenda-cell">
-    <a href="{{site.github.url}}/presentations/spring.html">Introdução ao Spring</a>
-    <a href="{{site.github.url}}/pdfs/spring.pdf">(PDF)</a>
+    <a href="{{site.baseurl}}/presentations/spring.html">Introdução ao Spring</a>
+    <a href="{{site.baseurl}}/pdfs/spring.pdf">(PDF)</a>
     <ul>
       <li>Injeção de Dependência e Inversão de Controle</li>
       <li>Beans: Ciclo de vida e escopo</li>
@@ -113,8 +113,8 @@ corporativas utilizando _frameworks_ de mercado. Os tópicos programados para a 
 <tr>
   <td class="date-cell"><date datetime="21-11-2016">21/11</date></td>
   <td class="agenda-cell">
-    <a href="{{site.github.url}}/presentations/spring.html">Introdução ao Spring</a>
-    <a href="{{site.github.url}}/pdfs/spring.pdf">(PDF)</a>
+    <a href="{{site.baseurl}}/presentations/spring.html">Introdução ao Spring</a>
+    <a href="{{site.baseurl}}/pdfs/spring.pdf">(PDF)</a>
     <ul>
       <li>Anotações</li>
       <li>Serviços: AOP, controle de transações, etc</li>
@@ -168,7 +168,7 @@ Tópicos importantes a serem abordados na apresentação:
             | ASP.NET MVC    |
 
 ### Projeto e Implementação de Aplicação
-Descrição do <a href="{{site.github.url}}/trabalho/requisitos.html">trabalho</a>.
+Descrição do <a href="{{site.baseurl}}/trabalho/requisitos.html">trabalho</a>.
 
 
 <!-- <div class="posts">

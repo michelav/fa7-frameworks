@@ -92,7 +92,7 @@ transition: slide
         </ul>
     </section>
     <section>
-        <img width="75%" src="{{site.github.url}}/media/ssb_pool.jpg">
+        <img width="75%" src="{{site.baseurl}}/media/ssb_pool.jpg">
     </section>
     <section>
         <h3 class="titlemark">Exemplo</h3>
@@ -135,8 +135,15 @@ transition: slide
         terá os dados do estoque</li>
         <li>Use os parâmetros do request para indicar a mercadoria e quantidade a ser reservada</li>
         <li>Utilize as anotações características do bean: <code style="color: red;">@Stateless</code> para
-        o Session e <code style="color: red;">@Inject</code> para injeção no servlet</li>
+        o Session e <code style="color: red;">@EJB</code> para injeção no servlet</li>
     </ol>
+</section>
+<section data-markdown>
+    ### Relembrando...
+
+    - Stateless Session Beans (SSB) não guardam estado conversacional
+    - (Via de regra) O container reusará os SSBs por meio de um pool
+    - Nunca confie nos atributos de classe de um SSB
 </section>
 <section>
     <h2>Stateful Sesion Bean</h2>
@@ -163,7 +170,7 @@ transition: slide
     </section>
     <section data-markdown>
         <script type="text/template">
-            ![Stateful Session Bean Pool]({{site.github.url}}/media/sfsb_pool.jpg)
+            ![Stateful Session Bean Pool]({{site.baseurl}}/media/sfsb_pool.jpg)
         </script>
     </section>
     <section data-markdown>
@@ -182,7 +189,13 @@ transition: slide
         </script>
     </section>
 </section>
-<section data-background-image="{{site.github.url}}/media/pills.png" data-background-size="cover">
+<section data-markdown>
+    ### Muito importante...
+
+    - #### Stateful Session Beans não podem ser injetados diretamente em elementos Stateless!!
+    - #### Usem JNDI para fazer lookup ou MBs de Sessão como elementos controladores!
+</section>
+<section data-background-image="{{site.baseurl}}/media/pills.png" data-background-size="cover">
     <h2>Stateless vs Stateful</h2>
     <section>
         <h3>
@@ -228,7 +241,7 @@ transition: slide
     </section>
     <section data-markdown>
         <script type="text/template">
-            ![Singleton Session Bean Pool]({{site.github.url}}/media/singleton_pool.png)
+            ![Singleton Session Bean Pool]({{site.baseurl}}/media/singleton_pool.png)
                 <!-- .element: width="65%" -->
         </script>
     </section>
@@ -245,11 +258,6 @@ transition: slide
             ```
         </script>
     </section>
-</section>
-<section>
-    <h2>Exercício 3</h2><br />
-    <h4 align="left">O projeto da distribuidora necessita carregar informações de domínio sobre os fornecedores
-    e situação de produtos nos fornecedores. Crie um singleton que carregue essas informações.</h4>
 </section>
 <section>
     <h1>Beans e Interfaces</h1>
@@ -324,7 +332,7 @@ transition: slide
     <script type="text/template">
         ## Acessando beans
         ### JNDI <!-- .element: class="titlemark" -->
-        ![JNDI Context]({{site.github.url}}/media/jndi_contexts.jpg) <!-- .element: width="stretch" -->
+        ![JNDI Context]({{site.baseurl}}/media/jndi_contexts.jpg) <!-- .element: width="stretch" -->
     </script>
 </section>
 <section>
@@ -414,20 +422,12 @@ transition: slide
         </section>
 </section>
 <section>
-    <h2>Exercício 4</h2><br />
-    <h4 align="left">
-    Forneça um Stateful Session Bean para controle de um "carrinho de reservas" de mercadorias onde
-    o cliente possa incluir ou retirar produtos. O Bean deve prover uma operação para conclusão da reserva. Crie um
-    Servlet em uma aplicação Web que não seja distribuída junto com o componente de negócio e acesse o Bean remotamente.
-    </h4>
-</section>
-<section>
     <h2>Ciclo de Vida dos Beans de Sessão</h2>
 </section>
 <section>
     <h2>Stateless Session Beans</h2>
     <section>
-        <img width="100%" src="{{site.github.url}}/media/ssb_lifecycle.png">
+        <img width="100%" src="{{site.baseurl}}/media/ssb_lifecycle.png">
     </section>
     <section>
         <h3 class="titlemark"><code>@PostConstruct</code></h3>
@@ -444,7 +444,7 @@ transition: slide
     <h2>Stateful Session Beans</h2>
     <section>
         <br>
-        <img width="80%" src="{{site.github.url}}/media/sfssb_lifecycle.png">
+        <img width="80%" src="{{site.baseurl}}/media/sfssb_lifecycle.png">
     </section>
     <section>
         <h3 class="titlemark"><code>@PostConstruct</code> / <code>@PreDestroy</code></h3>
@@ -470,7 +470,7 @@ transition: slide
 <section>
     <h2>SIngleton Session Beans</h2>
     <section>
-        <img width="100%" src="{{site.github.url}}/media/ssb_lifecycle.png">
+        <img width="100%" src="{{site.baseurl}}/media/ssb_lifecycle.png">
     </section>
 </section>
 <section>
@@ -502,18 +502,24 @@ transition: slide
             não é de alta velocidade. Qual a sua proposta de solução para esse problema específico?</h4>
     </section>
 </section>
-<section>
-    <h2>Exercício 5</h2>
-    <h4 align="left">Ajuste o singleton bean do exercício 3 para carregar as informações de domínio no início
-    da aplicação.</h4>
-</section>
+<section data-markdown>
+    <script type="text/template">
+        ## Exercício 3
 
+
+        O procedimento de submissão das reservas da distribuidora necessita ser alterado para realizar
+        verificações de estoque entre os vários fornecedores. Ajuste-o para ser executado de forma assíncrona.
+        Confirme o resultado. <!-- .element: align="justify" -->
+
+        Importante: Lembrem-se que não é correto injetar um SFSB em servlets diretamente. <!-- .element: align="justify" -->
+    </script>
+</section>
 <section>
     <h2>Assincronia na Plataforma Java EE</h2>
 </section>
 <section>
     <h2>Síncrono vs Assíncrono</h2>
-    <img class="stretch" src="{{site.github.url}}/media/syncAsync.gif">
+    <img class="stretch" src="{{site.baseurl}}/media/syncAsync.gif">
 </section>
 <section data-markdown>
     <script type="text/template">
@@ -582,16 +588,6 @@ transition: slide
         - #### Essa abordagem não é tolerante à falhas ou quedas do container
     </script>
 </section>
-<section data-markdown>
-    <script type="text/template">
-        ## Exercício 6
-
-
-        O procedimento de submissão das reservas da distribuidora necessita ser alterado para realizar
-        verificações de estoque entre os vários fornecedores. Ajuste-o para ser executado de forma assíncrona.
-        Confirme o resultado. <!-- .element: align="justify" -->
-    </script>
-</section>
 <section>
     <h2>Mensageria, JMS e MDBs</h2>
 </section>
@@ -618,13 +614,13 @@ transition: slide
     </section>
     <section data-markdown>
         <script type="text/template">
-        ![MoA]({{site.github.url}}/media/moa.png) <!-- .element: width="90%" -->
+        ![MoA]({{site.baseurl}}/media/moa.png) <!-- .element: width="90%" -->
         </script>
     </section>
     <section data-markdown>
         <script type="text/template">
         ### Message Oriented Middleware (MOM) <!-- .element: class="titlemark" -->
-        ![Middleware]({{site.github.url}}/media/middleware.jpg) <!-- .element: width="90%" -->
+        ![Middleware]({{site.baseurl}}/media/middleware.jpg) <!-- .element: width="90%" -->
         </script>
     </section>
 </section>
@@ -666,13 +662,13 @@ transition: slide
     <section data-markdown>
         <script type="text/template">
             ### Ponto a Ponto <!-- .element: class="titlemark" -->
-            ![Middleware]({{site.github.url}}/media/ponto_ponto.jpg) <!-- .element: width="90%" -->
+            ![Middleware]({{site.baseurl}}/media/ponto_ponto.jpg) <!-- .element: width="90%" -->
         </script>
     </section>
     <section data-markdown>
         <script type="text/template">
             ### Publicação \ Subscrição <!-- .element: class="titlemark" -->
-            ![Middleware]({{site.github.url}}/media/pub_sub.jpg) <!-- .element: width="90%" -->
+            ![Middleware]({{site.baseurl}}/media/pub_sub.jpg) <!-- .element: width="90%" -->
         </script>
     </section>
     <section data-markdown>
@@ -688,7 +684,7 @@ transition: slide
 </section>
 <section data-markdown>
     <script type="text/template">
-        ## Exercício 7
+        ## Exercício 4
         ### Identifique as estruturas e o modelo de comunicação nos exemplos a seguir:
         1. #### Estabelecimento de uma conexão FTP entre sua máquina e um servidor
         2. #### O broadcast de pacotes UDP na sua LAN
@@ -709,7 +705,7 @@ transition: slide
     <script type="text/template">
         ## JMS
         ### Arquitetura <!-- .element: class="titlemark" -->
-        ![Middleware]({{site.github.url}}/media/jms.jpg) <!-- .element: width="60%" -->
+        ![Middleware]({{site.baseurl}}/media/jms.jpg) <!-- .element: width="60%" -->
     </script>
 </section>
 <section>
@@ -753,7 +749,7 @@ transition: slide
         <script type="text/template">
             <br />
             ### Estruturas de Programação <!-- .element: class="titlemark" -->
-            ![jms_pm]({{site.github.url}}/media/jms_pm.png) <!-- .element: width="70%" -->
+            ![jms_pm]({{site.baseurl}}/media/jms_pm.png) <!-- .element: width="70%" -->
         </script>
     </section>
     <section>
@@ -807,7 +803,7 @@ transition: slide
         <script type="text/template">
             <br>
             ### Mensagem <!-- .element: class="titlemark" -->
-            ![jms_msg]({{site.github.url}}/media/jms_msg.jpg) <!-- .element: width="60%" -->
+            ![jms_msg]({{site.baseurl}}/media/jms_msg.jpg) <!-- .element: width="60%" -->
         </script>
     </section>
     <section data-markdown>
@@ -864,7 +860,7 @@ transition: slide
     <script type="text/template">
         ## MDBs
         ### Ciclo de Vida <!-- .element: class="titlemark" -->
-        ![MDB Life Cycle]({{site.github.url}}/media/mdb_lifecycle.png) <!-- .element: width="100%" -->
+        ![MDB Life Cycle]({{site.baseurl}}/media/mdb_lifecycle.png) <!-- .element: width="100%" -->
     </script>
 </section>
 <section data-markdown>
@@ -905,10 +901,12 @@ transition: slide
 </section>
 <section data-markdown>
     <script type="text/template">
-        ## Exercício 8
+        ## Exercício 5
 
-        Ajuste a comunicação assíncrona implementada no exercício 6 para que ela
-        seja realizada pelo MDB. Fique livre para utilizar o tipo de mensagem que desejar.
+        Complemente a aplicação implementada no exercício 3 de maneira que itens não existentes no estoque local sejam
+        solicitados a matriz (ou uma outra filial) por meio de mensagens em uma fila.
+
+        O MDB da Matriz deve receber e imprimir o pedido.
     </script>
 </section>
 <!-- section>

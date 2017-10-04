@@ -29,17 +29,17 @@ transition: slide
 </section>
 <section>
         <h2>Especificações</h2>
-        <img class="stretch" src="{{site.github.url}}/media/javaee7-specs.png">
+        <img class="stretch" src="{{site.baseurl}}/media/javaee7-specs.png">
 </section>
 <section>
         <h2>Histórico</h2>
-        <img class="stretch" src="{{site.github.url}}/media/jee_history.png">
+        <img class="stretch" src="{{site.baseurl}}/media/jee_history.png">
         <aside class="notes">Início da plataforma exigia muitas classes e interfaces para entregar um
         comportamento. Falar sobre o benefício do modelo usado com anotações. Classes de Framework vs POJOs.</aside>
 </section>
 <section>
         <h2>Camadas</h2>
-        <img class="stretch" src="{{site.github.url}}/media/jee_tiers.png" />
+        <img class="stretch" src="{{site.baseurl}}/media/jee_tiers.png" />
         <aside class="notes">O foco do curso é na camada de negócio.</aside>
 </section>
 <!-- section>
@@ -71,18 +71,18 @@ transition: slide
 </section>
 <section>
     <h2>Organização</h2>
-    <img class="stretch" src="{{site.github.url}}/media/jeett_container.png">
+    <img class="stretch" src="{{site.baseurl}}/media/jeett_container.png">
 </section>
 <section>
     <h2>APIs</h2>
-    <img class="stretch" src="{{site.github.url}}/media/jeett_apis.png">
+    <img class="stretch" src="{{site.baseurl}}/media/jeett_apis.png">
 </section>
 <section>
     <h2>Alguns Fornecedores</h2>
-    <img width="20%" src="{{site.github.url}}/media/glassfish.jpg">
-    <img width="20%" src="{{site.github.url}}/media/jboss.svg">
-    <img width="20%" src="{{site.github.url}}/media/was.jpg">
-    <img width="20%" src="{{site.github.url}}/media/wildfly.png">
+    <img width="20%" src="{{site.baseurl}}/media/glassfish.jpg">
+    <img width="20%" src="{{site.baseurl}}/media/jboss.svg">
+    <img width="20%" src="{{site.baseurl}}/media/was.jpg">
+    <img width="20%" src="{{site.baseurl}}/media/wildfly.png">
 </section>
 <section><h2>Serviços Básicos</h2></section>
 <section>
@@ -94,7 +94,7 @@ transition: slide
     <section>
         <br><br>
         <h3 class="titlemark">RPC</h3>
-        <img width="75%" src="{{site.github.url}}/media/local_rpc.jpg" />
+        <img width="75%" src="{{site.baseurl}}/media/local_rpc.jpg" />
     </section>
     <section>
         <h3 class="titlemark">RMI/IIOP</h3><br><br>
@@ -123,13 +123,13 @@ transition: slide
     </section>
     <section>
     <h3 class="titlemark">Serviço de Nomes</h3>
-    <img width="90%" src="{{site.github.url}}/media/naming_service.gif" />
+    <img width="90%" src="{{site.baseurl}}/media/naming_service.gif" />
     <aside class="notes">Fazer paralelo com DNS.</aside>
     </section>
     <section>
     <br><br>
     <h3 class="titlemark">JNDI</h3>
-    <img width="60%" src="{{site.github.url}}/media/jndiarch.jpg" />
+    <img width="60%" src="{{site.baseurl}}/media/jndiarch.jpg" />
     </section>
     <section>
         <h3>Localização</h3>
@@ -195,10 +195,10 @@ transition: slide
     <section>
         <br><br>
         <h3 class="titlemark">Inversão de Controle</h3>
-        <img class="fragment" width="55%" src="{{site.github.url}}/media/ioc.gif">
+        <img class="fragment" width="55%" src="{{site.baseurl}}/media/ioc.gif">
     </section>
     <section>
-        <img width="90%" src="{{site.github.url}}/media/di.png">
+        <img width="90%" src="{{site.baseurl}}/media/di.png">
     </section>
     <section>
         <h3 class="titlemark">Considerações</h3>
@@ -243,12 +243,12 @@ transition: slide
     <section>
         <br><br>
         <h3 class="titlemark fragment">Estrutura de uma aplicação</h3>
-        <img width="70%" class="fragment" src="{{site.github.url}}/media/estrutura_ear.png">
+        <img width="70%" class="fragment" src="{{site.baseurl}}/media/estrutura_ear.png">
     </section>
     <section>
         <br><br>
         <h3 class="titlemark fragment">Estrutura de um componente</h3>
-        <img width="60%" class="fragment" src="{{site.github.url}}/media/estrutura_ejbjar.png">
+        <img width="60%" class="fragment" src="{{site.baseurl}}/media/estrutura_ejbjar.png">
     </section>
 </section>
 <section>
