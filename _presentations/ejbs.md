@@ -909,6 +909,49 @@ transition: slide
         O MDB da Matriz deve receber e imprimir o pedido.
     </script>
 </section>
+<section data-markdown>
+    ## Web Services na Plataforma Java EE
+</section>
+<section>
+    <h2>Web Services</h2>
+    <section data-markdown>
+        <script type="text/template">
+            ### O que são? Qual a importância? <!-- .element: class="titlemark" -->
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+            ### Como implementar <!-- .element: class="titlemark" -->
+        </script>
+    </section>
+</section>
+<section data-background-image="{{site.baseurl}}/media/pills.png" data-background-size="cover">
+    <section data-markdown>
+            ### SOAP vs REST
+    </section>
+    <section data-markdown>
+            ### JAX-WS  vs  JAX-RS
+    </section>
+    <section data-markdown>
+            ### Formalismo  vs  Facilidade
+    </section>
+    <section data-markdown>
+            ### RPC  vs  API
+    </section>
+    <section data-markdown>
+            ### Qual a melhor abordagem?
+    </section>
+</section>
+<section data-markdown>
+        # Declarando serviços
+
+        - ### SOAP
+            - #### @WebService
+            - #### @WebMethod
+        - ### REST
+            - #### @Path
+            - #### Anotações para cada método HTTP
+</section>
 <!-- section>
     Entities e JPA
 </section>
