@@ -44,23 +44,26 @@ corporativas utilizando _frameworks_ de mercado. Os tópicos programados para a 
   <th>Tópicos</th>
 </tr>
 <tr>
-  <td class="date-cell"><date datetime="31-10-2016">31/10</date></td>
+  <td class="date-cell"><date datetime="02-10-2017">02/10</date></td>
   <td class="agenda-cell">
-    <a href="{{site.baseurl}}/presentations/intro-desenv.html">Desenvolvimento corporativo</a>
-    <a href="{{site.baseurl}}/pdfs/intro-desenv.pdf">(PDF)</a>
+    Desenvolvimento corporativo
+    (<a href="{{site.baseurl}}/presentations/intro-desenv.html">HTML</a>)
+    (<a href="{{site.baseurl}}/pdfs/intro-desenv.pdf">PDF</a>)
     <ul>
       <li>Histórico</li>
       <li>Principais conceitos</li>
     </ul>
-    <a href="{{site.baseurl}}/presentations/javaee_plat.html">Plataforma Java EE</a>
-    <a href="{{site.baseurl}}/pdfs/javaee_plat.pdf">(PDF)</a>
+    Plataforma Java EE
+    (<a href="{{site.baseurl}}/presentations/javaee_plat.html">HTML</a>)
+    (<a href="{{site.baseurl}}/pdfs/javaee_plat.pdf">PDF</a>)
     <ul>
       <li>O que é a plataforma e histórico</li>
       <li>Containers</li>
       <li>Principais serviços</li>
     </ul>
-    <a href="{{site.baseurl}}/presentations/ejbs.html">Enterprise Java Beans</a>
-    <a href="{{site.baseurl}}/pdfs/ejbs.pdf">(PDF)</a>
+    Enterprise Java Beans
+    (<a href="{{site.baseurl}}/presentations/ejbs.html">HTML</a>)
+    (<a href="{{site.baseurl}}/pdfs/ejbs.pdf">PDF</a>)
     <ul>
       <li>Conceitos e tipos</li>
       <li>Modelo de componentes e arquitetura</li>
@@ -69,29 +72,43 @@ corporativas utilizando _frameworks_ de mercado. Os tópicos programados para a 
   </td>
 </tr>
 <tr>
-  <td class="date-cell"><date datetime="07-11-2016">07/11</date></td>
+  <td class="date-cell"><date datetime="04-10-2017">04/10</date></td>
   <td class="agenda-cell">
-    <a href="{{site.baseurl}}/presentations/ejbs.html">Enterprise Java Beans</a>
-    <a href="{{site.baseurl}}/pdfs/ejbs.pdf">(PDF)</a>
+    Enterprise Java Beans
+    (<a href="{{site.baseurl}}/presentations/ejbs.html">HTML</a>)
+    (<a href="{{site.baseurl}}/pdfs/ejbs.pdf">PDF</a>)
     <ul>
       <li>Session Beans</li>
       <ul><li>Stateful e Singletons</li></ul>
+      <li>Comunicação Assíncrona</li>
+      <ul>
+        <li>Modelos</li>
+        <li>JMS</li>
+      </ul>
     </ul>
     </td>
 </tr>
 <tr>
-  <td class="date-cell"><date datetime="09-11-2016">09/11</date></td>
+  <td class="date-cell"><date datetime="09-10-2017">09/10</date></td>
   <td class="agenda-cell">
-    <a href="{{site.baseurl}}/presentations/ejbs.html">Message Driven Beans</a>
-    <a href="{{site.baseurl}}/pdfs/ejbs.pdf">(PDF)</a>
+    Enterprise Java Beans
+    (<a href="{{site.baseurl}}/presentations/ejbs.html">HTML</a>)
+    (<a href="{{site.baseurl}}/pdfs/ejbs.pdf">PDF</a>)
       <ul>
-        <li>Modelos de comunicação</li>
-        <li>JMS</li>
-        <li>Message Driven Beans</li>
+        <li>Comunicação Assíncrona</li>
+          <ul>
+            <li>JMS</li>
+            <li>Message Driven Beans</li>
+          </ul>
+        <li>Web Services</li>
+          <ul>
+            <li>SOAP vs REST</li>
+            <li>Estratégias de implementação</li>
+          </ul>
       </ul>
-
-    <a href="{{site.baseurl}}/presentations/persistencia.html">Java EE - Persistência</a>
-    <a href="{{site.baseurl}}/pdfs/persistencia.pdf">(PDF)</a>
+    Entidades
+    (<a href="{{site.baseurl}}/presentations/persistencia.html">HTML</a>)
+    (<a href="{{site.baseurl}}/pdfs/persistencia.pdf">PDF</a>)
     <ul>
       <li>Entities e JPA</li>
       <li>Transações</li>
@@ -99,10 +116,11 @@ corporativas utilizando _frameworks_ de mercado. Os tópicos programados para a 
   </td>
 </tr>
 <tr>
-  <td class="date-cell"><date datetime="16-11-2016">16/11</date></td>
+  <td class="date-cell"><date datetime="11-10-2017">11/10</date></td>
   <td class="agenda-cell">
-    <a href="{{site.baseurl}}/presentations/spring.html">Introdução ao Spring</a>
-    <a href="{{site.baseurl}}/pdfs/spring.pdf">(PDF)</a>
+    Spring
+    (<a href="{{site.baseurl}}/presentations/spring.html">HTML</a>)
+    (<a href="{{site.baseurl}}/pdfs/spring.pdf">PDF</a>)
     <ul>
       <li>Injeção de Dependência e Inversão de Controle</li>
       <li>Beans: Ciclo de vida e escopo</li>
@@ -111,10 +129,11 @@ corporativas utilizando _frameworks_ de mercado. Os tópicos programados para a 
   </td>
 </tr>
 <tr>
-  <td class="date-cell"><date datetime="21-11-2016">21/11</date></td>
+  <td class="date-cell"><date datetime="16-10-2017">16/10</date></td>
   <td class="agenda-cell">
-    <a href="{{site.baseurl}}/presentations/spring.html">Introdução ao Spring</a>
-    <a href="{{site.baseurl}}/pdfs/spring.pdf">(PDF)</a>
+    Spring
+    (<a href="{{site.baseurl}}/presentations/spring.html">HTML</a>)
+    (<a href="{{site.baseurl}}/pdfs/spring.pdf">PDF</a>)
     <ul>
       <li>Anotações</li>
       <li>Serviços: AOP, controle de transações, etc</li>
@@ -122,7 +141,7 @@ corporativas utilizando _frameworks_ de mercado. Os tópicos programados para a 
   </td>
 </tr>
 <tr>
-  <td class="date-cell"><date datetime="23-11-2016">23/11</date></td>
+  <td class="date-cell"><date datetime="18-10-2017">18/10</date></td>
   <td class="agenda-cell">Revisão e apresentação de trabalhos</td>
 </tr>
 </table>

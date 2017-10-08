@@ -506,10 +506,7 @@ transition: slide
     <script type="text/template">
         ## Exercício 3
 
-
-        O procedimento de submissão das reservas da distribuidora necessita ser alterado para realizar
-        verificações de estoque entre os vários fornecedores. Ajuste-o para ser executado de forma assíncrona.
-        Confirme o resultado. <!-- .element: align="justify" -->
+        Altere sua aplicação da distribuidora para que o pedido de reserva seja armazendo durante a sessão do cliente e submetido apenas no final do processo. <!-- .element: align="justify" -->
 
         Importante: Lembrem-se que não é correto injetar um SFSB em servlets diretamente. <!-- .element: align="justify" -->
     </script>
@@ -916,12 +913,98 @@ transition: slide
     <h2>Web Services</h2>
     <section data-markdown>
         <script type="text/template">
-            ### O que são? Qual a importância? <!-- .element: class="titlemark" -->
+            ### O que são?
         </script>
     </section>
     <section data-markdown>
         <script type="text/template">
-            ### Como implementar <!-- .element: class="titlemark" -->
+            ### Declarando serviços
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+        ### SOAP <!-- .element: class="titlemark" -->
+        - `@WebService`
+        - `@WebMethod`
+        - Anotações JAXB: XML <--> Objetos
+            - `@XmlRootElement`
+            - `@XmlElement`
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+            ### SOAP <!-- .element: class="titlemark" -->
+            ```java
+                @WebService
+                public class EstoqueService {
+                    @EJB EstoqueBean bean;
+
+                    @WebMethod
+                    public List<Item> list() {
+                    ...
+                    }
+                }
+            ```
+
+            ```java
+                @XmlRootElement
+                @XmlAccessorType(XmlAccessType.FIELD)
+                public class Item {
+
+                    @XmlElement
+                    private String name;
+
+                    @XmlElement
+                    private int quantity;
+                    ...
+                }
+            ```
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+        ### SOAP <!-- .element: class="titlemark" -->
+        - `@WebService`
+        - `@WebMethod`
+        - Anotações JAXB: XML <--> Objetos
+            - `@XmlRootElement`
+            - `@XmlElement`
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+        ### REST <!-- .element: class="titlemark" -->
+        - `@Path`
+            - Pode ser usado em conjunto com `@PathParam`
+        - Métodos Http
+            - `@Get`, `@Post`, `@Put`, `@Delete`, etc
+        - `@Produces` vs `@Consumes`
+        - `@PathParam` vs `@QueryParam`
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+            ### REST <!-- .element: class="titlemark" -->
+            ```java
+            @Path("/estoque")
+            public class EstoqueRest {
+
+                @Get
+                @Path("items")
+                @Produces(MediaType.APPLICATION_JSON)
+                public List<Item> list() {...}
+
+                @POST
+                @Path("items")
+                @Consumes(MediaType.APPLICATION_JSON)
+                public void add() {...}
+
+                @Get
+                @Path("items/{id}")
+                @Produces(MediaType.APPLICATION_JSON)
+                public Item getItem(@PathParam("id") int id) {...}
+            }
+            ```
         </script>
     </section>
 </section>
@@ -942,15 +1025,14 @@ transition: slide
             ### Qual a melhor abordagem?
     </section>
 </section>
-<section data-markdown>
-        # Declarando serviços
-
-        - ### SOAP
-            - #### @WebService
-            - #### @WebMethod
-        - ### REST
-            - #### @Path
-            - #### Anotações para cada método HTTP
+<section>
+    <h2>Web Services</h2>
+    <section data-markdown>
+        <script type="text/template">
+            ### Estratégias de Implementação <!-- .element: class="titlemark" -->
+            #### Session Beans vs POJOs
+        </script>
+    </section>
 </section>
 <!-- section>
     Entities e JPA
