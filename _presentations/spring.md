@@ -47,7 +47,7 @@ transition: slide
 <section data-markdown>
     <script type="text/template">
         ## Projetos
-        ![SPring Projects]({{site.github.url}}/media/spring_projects.png) <!-- .element width="150%" -->
+        ![SPring Projects]({{site.baseurl}}/media/spring_projects.png) <!-- .element width="150%" -->
     </script>
 </section>
 <section>
@@ -66,7 +66,7 @@ transition: slide
         <script type="text/template">
             <br />
             ### Módulos <!-- .element class="titlemark" -->
-            ![Spring Modulos]({{site.github.url}}/media/spring-modulos.png) <!-- .element width="70%" -->
+            ![Spring Modulos]({{site.baseurl}}/media/spring-modulos.png) <!-- .element width="70%" -->
         </script>
     </section>
     <section data-markdown>
@@ -140,7 +140,7 @@ transition: slide
     <section data-markdown>
         <script type="text/template">
             <br />
-            ![Container]({{site.github.url}}/media/container-magic.png)  <!-- .element width="80%" -->
+            ![Container]({{site.baseurl}}/media/container-magic.png)  <!-- .element width="80%" -->
         </script>
     </section>
     <section>
@@ -279,7 +279,7 @@ transition: slide
     <section data-markdown>
         <script type="text/template">
             <br />
-            ![Ex1]({{site.github.url}}/media/spring_ex1_classes.png) <!-- .element width="90%" -->
+            ![Ex1]({{site.baseurl}}/media/spring_ex1_classes.png) <!-- .element width="90%" -->
         </script>
     </section>
     <section data-markdown>
@@ -437,7 +437,7 @@ transition: slide
     <section data-markdown>
         <script type="text/template">
             <br />
-            ![Ex2]({{site.github.url}}/media/spring_ex2_classes.png) <!-- .element width="90%" -->
+            ![Ex2]({{site.baseurl}}/media/spring_ex2_classes.png) <!-- .element width="90%" -->
         </script>
     </section>
 </section>
@@ -500,14 +500,14 @@ transition: slide
     <script type="text/template">
         ## Escopo
         ### Singleton <!-- .element class="titlemark" -->
-        ![escopo_singleton]({{site.github.url}}/media/spring_singleton.png)
+        ![escopo_singleton]({{site.baseurl}}/media/spring_singleton.png)
     </script>
 </section>
 <section data-markdown>
     <script type="text/template">
         ## Escopo
         ### Prototype <!-- .element class="titlemark" -->
-        ![escopo_singleton]({{site.github.url}}/media/spring_prototype.png)
+        ![escopo_singleton]({{site.baseurl}}/media/spring_prototype.png)
     </script>
 </section>
 <section>
@@ -558,7 +558,7 @@ transition: slide
     <section data-markdown>
         <script type="text/template">
         <br /><br />
-            ![ciclo de vida]({{site.github.url}}/media/spring_lifecycle.png) <!-- .element class="stretch" -->
+            ![ciclo de vida]({{site.baseurl}}/media/spring_lifecycle.png) <!-- .element class="stretch" -->
         </script>
     </section>
 </section>

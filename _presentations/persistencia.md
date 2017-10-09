@@ -23,7 +23,7 @@ transition: slide
 </section>
 <section data-markdown>
     <script type="text/template">
-    ![JPA]({{site.github.url}}/media/jpa.png)
+    ![JPA]({{site.baseurl}}/media/jpa.png)
     </script>
 </section>
 
@@ -96,7 +96,7 @@ transition: slide
     </section>
     <section>
         <h3>Ciclo de vida das entidades</h3>
-         <img class="stretch" src="{{site.github.url}}/media/jpa-state-transtition.png">
+         <img class="stretch" src="{{site.baseurl}}/media/jpa-state-transtition.png">
     </section>
      <section>
         <h3 class="titlemark">Gerenciado pelo Container</h3>
@@ -163,7 +163,7 @@ transition: slide
 </section>
 <section>
     <h2>Sumário</h2>
-    <img class="stretch" src="{{site.github.url}}/media/conceitos_jpa.png" >
+    <img class="stretch" src="{{site.baseurl}}/media/conceitos_jpa.png" >
 </section>
 <section>
     <h2>Consultas</h2>
@@ -334,7 +334,7 @@ transition: slide
     <section data-markdown>
         <script type="text/template">
         <br /><br />
-        ![jta]({{site.github.url}}/media/jta.png) <!-- .element: width="60%" -->
+        ![jta]({{site.baseurl}}/media/jta.png) <!-- .element: width="60%" -->
         </script>
     </section>
     <section><h2>E no mundo do container?</h2></section>
@@ -352,7 +352,7 @@ transition: slide
     <section data-markdown>
         <script type="text/template">
             ### TransactionAttribute <!-- .element: class="titlemark" -->
-            ![jta_scope]({{site.github.url}}/media/jta_scope.png) <!-- .element: width="70%" -->
+            ![jta_scope]({{site.baseurl}}/media/jta_scope.png) <!-- .element: width="70%" -->
         </script>
     </section>
     <section data-markdown>

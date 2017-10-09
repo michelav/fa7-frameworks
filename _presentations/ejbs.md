@@ -926,7 +926,7 @@ transition: slide
         ### SOAP <!-- .element: class="titlemark" -->
         - `@WebService`
         - `@WebMethod`
-        - Anotações JAXB: XML <--> Objetos
+        - Anotações JAXB: XML &#8660; Objetos
             - `@XmlRootElement`
             - `@XmlElement`
         </script>
@@ -959,16 +959,6 @@ transition: slide
                     ...
                 }
             ```
-        </script>
-    </section>
-    <section data-markdown>
-        <script type="text/template">
-        ### SOAP <!-- .element: class="titlemark" -->
-        - `@WebService`
-        - `@WebMethod`
-        - Anotações JAXB: XML <--> Objetos
-            - `@XmlRootElement`
-            - `@XmlElement`
         </script>
     </section>
     <section data-markdown>
