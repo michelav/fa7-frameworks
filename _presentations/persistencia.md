@@ -298,13 +298,12 @@ transition: slide
         </code></pre>
     </section>
     <section>
-        <h3 class="titlemark">Boas práticas</h3>
+        <h3 class="titlemark">Dicas</h3>
         <ul>
-            <li><h4>Usar DAOs somente quando necessário</h4></li>
-                <ul><li>DAO vs Repository</li></ul>
+            <li><h4>DAOs vs Entity Controllers vs Entity Managers</h4></li>
             <li><h4>As máximas do mundo SQL valem para as consultas JPQL</h4></li>
             <li><h4>Cuidado com as funcionalidades específicas do Provedor</h4></li>
-            <li><h4>Tente usar NamedQuery sempre que possível</h4></li>
+            <li><h4>NamedQuery ou Consultas Dinâmicas</h4></li>
         </ul>
     </section>
 </section>
@@ -346,7 +345,7 @@ transition: slide
         <script type="text/template">
             ### CMT <!-- .element: class="titlemark" -->
             - #### Demarcadas por anotações em classes ou métodos.
-            - <span class="code">@TransactionAttribute</span> vs <span class="code">@Transactional</span>
+              - <span class="code">@TransactionAttribute</span>
         </script>
     </section>
     <section data-markdown>
@@ -476,25 +475,18 @@ transition: slide
     </ul>
 </section>
 <section>
-    <h2>Exercício 9</h2>
+    <h2>Exercício 7</h2>
     <h4 align="left">Implementar as seguintes funções na aplicação distribuidora:</h4>
     <ul>
-        <li><h4>Uma listagem dos fornecedores e das mercadorias disponíveis;</h4></li>
-        <li><h4>Uma ordem de reserva de mercadorias utilizando um stateful session bean</h4></li>
-        <ul>
-            <li>O SFSB concentra os pedidos do cliente checando se há estoque disponível. Se não houver estoque disponível,
-            o SSB elenca um dos distribuidores e envia uma mensagem via fila solicitando a quantidade faltante de produto
-            </li>
-        </ul>
-        <li><h4>Crie uma aplicação FornecedorApp que implementa um MDB responsável por receber pedidos de mercadorias
-        e processá-los.</h4></li>
+        <li><h4>Um CRUD das mercadorias disponíveis;</h4></li>
+        <li><h4>UM CRUD de pedidos</h4></li>
+        <li><h4>Complementem a ação de pedido com um envio à matriz quando não houver mercadoria suficiente.</h4></li>
     </ul>
 </section>
 <section>
-    <h2>Exercício 9</h2>
+    <h2>Exercício 7</h2>
     <h3 class="titlemark">Dicas</h3>
     <ul>
-        <li><h4>Usem o script de criação das tabelas que está disponível no material da aula</h4></li>
         <li><h4>Lembrem-se de configurar os serviços adequados para a execução da aplicação</h4></li>
         <ul>
             <li>ActiveMQ</li>

@@ -736,8 +736,8 @@ transition: slide
             - #### `ConnectionFactory`
             - #### `Connection`
             - #### `Context`
-            - #### `Message Producers`
-            - #### `Message Consumers`
+            - #### `Session`
+            - #### `Message Producers` e `Message Consumers`
             - #### `Queue` e `Topic`
             - #### `Message`
         </script>
@@ -1023,6 +1023,13 @@ transition: slide
             #### Session Beans vs POJOs
         </script>
     </section>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        ## Exercício 6
+
+        Exponha um CRUD da "entidade" mercadoria por meio de serviços (SOAP ou REST)
+    </script>
 </section>
 <!-- section>
     Entities e JPA
