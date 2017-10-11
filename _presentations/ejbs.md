@@ -913,7 +913,10 @@ transition: slide
     <h2>Web Services</h2>
     <section data-markdown>
         <script type="text/template">
-            ### O que são?
+            - ### O que são?
+                - Histórico (CORBA, RPC-XML, etc)
+                - Como funcionam
+                - SOAP e REST
         </script>
     </section>
     <section data-markdown>
