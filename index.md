@@ -154,71 +154,13 @@ TBD
 # Avaliação
 <section id='trabalho' />
 
-Durante a disciplina, faremos duas avaliações da seguinte forma:
-
-1. Um seminário, a ser realizado em 18/10, em que discutiremos sobre tecnologias Server Side diversas;
-2. O design e implementação de um projeto de integração entre aplicações Java.
-
-### Seminário
-O objetivo é entender basicamente os conceitos que existem naquela tecnologia \ framework e compará-la
-com outras existentes. É obrigatório implementar um exemplo mínimo. O seminário deverá
-ser feito aos pares conforme o quadro.
-
-A apresentação terá duração de 20 minutos (extensão de 5 minutos para debates e dúvidas). E participação
-no seminário completo faz parte da avaliação, isto é, não vale apresentar e sair.
-
-Tópicos importantes a serem abordados na apresentação:
-
-* Qual  o foco \ nicho do framework;
-* Pontos fortes e fracos;
-* Comparação com o que discutimos na disciplina; e
-* Uma implementação. Afinal, somos técnicos. :-D
-
-
-**Horário** | **Framework**  | **Equipe**
-------------|---------------| -------------
-            | Spring Boot    |
-            | Play Framework |
-            | Node.Js        |
-            | VRaptor        |
-            | Grails         |
-            | Rails          |
-            | Django         |
-            | ASP.NET MVC    |
+Durante a disciplina, faremos o design e implementação de um projeto de integração entre aplicações Java EE.
 
 ### Projeto e Implementação de Aplicação
-Descrição do <a href="{{site.baseurl}}/trabalho/requisitos.html">trabalho</a>.
 
+O projeto consistirá da implementação de algumas funcionalidades em um grupo de aplicações Java EE. O processo de
+avaliação será conduzido pelo [Github Classroom](https://classroom.github.com/). Cada membro das equipes farão sua
+inscrição na avaliação por meio do link da [avaliação no classroom](https://classroom.github.com/g/RYhpZNvo). Após isso,
+as equipes farão um _fork_ do [repositório inicial](https://github.com/michelav/uni7-frameworks-trab) para trabalho.
+A descrição detalhada do trabalho, prazo e formato para entrega estão descritos no README do repositório.
 
-<!-- <div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}
-  </div>
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div> -->
