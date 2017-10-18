@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+
+	<bean id="loja" class="uni7.Loja" autowire="constructor" />
+
+	<bean id="regra1" class="uni7.RegraSimples">
+		<constructor-arg index="0" value="0.75" />
+		<property name="nome" value="Regra 01" />
+	</bean>
+
+	<bean id="regra2" class="uni7.RegraSimples">
+		<constructor-arg index="0" value="1.0" />
+		<property name="nome" value="Regra 02" />
+	</bean>
+
+	<bean id="regra3" class="uni7.RegraSimples">
+		<constructor-arg index="0" value="1.25" />
+		<property name="nome" value="Regra 03" />
+	</bean>
+</beans>
+
+
+
