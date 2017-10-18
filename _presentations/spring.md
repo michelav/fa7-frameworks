@@ -133,8 +133,10 @@ transition: slide
             ### Principais Interfaces <!-- .element class="titlemark" -->
             - #### BeanFactory
                 - ##### Container básico para uso de injeção de dependência
+                - ##### Compatibilidade
             - #### ApplicationContext
                 - ##### Acrescenta funcionalidades corporativas ao BeanFactory
+                    - Eventos, AOP, Transações, etc
         </script>
     </section>
     <section data-markdown>
@@ -267,20 +269,9 @@ transition: slide
     <h2>Exercício 1</h2>
     <section>
     <h4 align="left">
-        Uma distribuidora coordenadora ações de reserva e compra de mercadorias para vários
-        clientes. Ela pode interagir com vários fornecedores e decidir qual o melhor para
-        realizar a reserva.
-        A classe que representa os distribuidores interage com a abstração de fornecedor
-        por meio da interface `Fornecedor`. Enquanto a classe `Distribuidora` expõe uma
-        operação de `comprarMercadoria`, ela dispara uma avaliação de preço e após isso
-        faz a reserva efetivamente. Implementar a aplicação utilizando o Spring Framework.
+        Uma aplicação cliente interage com uma abstração de loja para calcular o valor de um pedido de compra. Essa loja
+        possui várias regras de venda dependendo das condições econômicas, estoque, etc. A classe que representa a Loja  interage com objetos que implementam diversas regras de cálculo. Esses objetos implementam a interface `Regra`. Implementar a aplicação utilizando o Spring Framework.
     </h4>
-    </section>
-    <section data-markdown>
-        <script type="text/template">
-            <br />
-            ![Ex1]({{site.baseurl}}/media/spring_ex1_classes.png) <!-- .element width="90%" -->
-        </script>
     </section>
     <section data-markdown>
     <script type="text/template">
@@ -419,29 +410,6 @@ transition: slide
     </section>
 </section>
 <section>
-    <h2>Exercício 2</h2>
-    <section>
-        <h4 align="left">Refatore a aplicação da Distribuidora para compreender os seguintes requisitos:</h4>
-        <ul>
-            <li>O cálculo da reserva de mercadoria é baseado em uma taxa:</li>
-                <ul><li><span class="code-red">valor = preço x quantidade x taxa</span></li></ul>
-            <li>A distribuidora contará com dois fornecedores:</li>
-                <ul>
-                <li>Simples: A taxa é informada por um método setter</li>
-                <li>Aleatorio: Calcula a taxa de forma randômica baseado em um limite máximo e mínimo</li>
-                </ul>
-            <li>A distribuidora consultará o valor da reserva em todos os fornecedores e selecionará o quem
-            tem menor custo</li>
-        </ul>
-    </section>
-    <section data-markdown>
-        <script type="text/template">
-            <br />
-            ![Ex2]({{site.baseurl}}/media/spring_ex2_classes.png) <!-- .element width="90%" -->
-        </script>
-    </section>
-</section>
-<section>
     <h2>Autowiring</h2>
 </section>
 <section>
@@ -479,8 +447,9 @@ transition: slide
     </section>
 </section>
 <section>
-    <h2>Exercício 3</h2>
-    <h4>Modificar o projeto da Distribuidora para que os fornecedores sejam injetados por meio de autowiring</h4>.
+    <h2>Exercício 2</h2>
+    <h4>Modificar o projeto da Loja para que ela tenha acesso a diversos objetos do tipo regra e imprima o valor calculado
+    de cada um deles. A lista de regras deve ser injetada por meio de autowiring.</h4>
 </section>
 <section data-markdown>
     <script type="text/template">
@@ -547,7 +516,7 @@ transition: slide
     </section>
 </section>
 <section>
-    <h2>Exercício 4</h2>
+    <h2>Exercício</h2>
     <h4>Importem e executem o projeto escopo disponível no repositório ou pasta da rede.</h4>
 </section>
 <section>
@@ -650,8 +619,8 @@ transition: slide
     </section>
 </section>
 <section>
-    <h2>Exercício 5</h2>
-    <h4>Modifique o projeto da distribuidora para utilizar anotações durante o autowiring.</h4>
+    <h2>Exercício 3</h2>
+    <h4>Modifique o projeto da loja para utilizar anotações durante o autowiring.</h4>
 </section>
 <section>
     <h2>Configuração programática</h2>
