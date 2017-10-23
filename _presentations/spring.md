@@ -857,6 +857,18 @@ transition: slide
         timeout | Tempo de timeout
         </script>
     </section>
+    <section data-markdown>
+        <script type="text/template">
+        ### Propagação <!-- .element class="titlemark" -->
+        - #### REQUIRED
+        - #### SUPPORTS
+        - #### MANDATORY
+        - #### REQUIRES_NEW
+        - #### NOT_SUPPORTED
+        - #### NEVER
+        - #### NESTED
+        </script>
+    </section>
     <section>
         <h3 class="titlemark"><span class="code">@Transactional</span></h3>
         <pre><code class="java">
