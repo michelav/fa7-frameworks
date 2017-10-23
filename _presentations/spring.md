@@ -451,6 +451,9 @@ transition: slide
     <h4>Modificar o projeto da Loja para que ela tenha acesso a diversos objetos do tipo regra e imprima o valor calculado
     de cada um deles. A lista de regras deve ser injetada por meio de autowiring.</h4>
 </section>
+<section>
+    <h2>Escopo</h2>
+</section>
 <section data-markdown>
     <script type="text/template">
     ## Escopo
@@ -536,9 +539,14 @@ transition: slide
 </section>
 <section>
     <h2>Anotações</h2>
+    <section></section>
     <section>
-        <h4>Devem ser habilitadas usando o elemento
-        <span class="code-red">context:annotation-config</span> </h4>
+        <h4>Utilizadas por meio dos elementos:
+        <span class="code-red">context:annotation-config</span> ou
+        <span class="code-red">context:component-scan</span> </h4>
+    </section>
+    <section>
+        <h4><span class="code-red">context:annotation-config</span></h4>
         <pre><code class="xml">
             &lt;beans
               xmlns="http://www.springframework.org/schema/beans"
@@ -548,7 +556,22 @@ transition: slide
               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
               http://www.springframework.org/schema/context ..."&gt;
                 &lt;context:annotation-config/&gt;
-            </beans>
+            &lt;bean&gt; id="..." autowired="..." /&gt;
+            &lt;/beans&gt;
+        </code></pre>
+    </section>
+    <section>
+        <h4><span class="code-red">context:component-scan</span></h4>
+        <pre><code class="xml">
+            &lt;beans
+              xmlns="http://www.springframework.org/schema/beans"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xmlns:context="http://www.springframework.org/schema/context"
+              xsi:schemaLocation="http://www.springframework.org/schema/beans
+              http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+              http://www.springframework.org/schema/context ..."&gt;
+                &lt;context:component-scan base-package="uni7" /&gt;
+            &lt;/beans&gt;
         </code></pre>
     </section>
     <section>
@@ -890,118 +913,3 @@ public class TransactionManagersConfig {
         </code></pre>
     </section>
 </section>
-<section>
-    <h2>Mensageria</h2>
-</section>
-<section>
-    <h2>Spring - JMS</h2>
-    <section data-markdown>
-        <script type="text/template">
-            - #### Produção de Mensagens: <span class="code">JmsTemplate</span>
-                - ##### Síncrono
-            - #### Message-Driven POJOs (MDPs)
-                - ##### Message Listener Containers
-                - ##### Assíncrono
-        </script>
-    </section>
-    <section data-markdown>
-        <script type="text/template">
-            ### <span class="code titlemark">JmsTemplate</span>
-            - #### Abstrai a criação das estruturas JMS (sessão, conexão, etc)
-                1. ##### Configurar a ConnectionFactory
-                2. ##### Implementar interface adequada para o tratamento da mensagem
-                    - ##### MessageCreator, SessionCallback, ProducerCallback
-        </script>
-    </section>
-    <section>
-        <h3 class="titlemark">Exemplo</h3>
-        <pre><code class="java">
-        @Component
-        public class MessageSender {
-            @Autowired
-            JmsTemplate template;
-            ...
-           public void sendMessage(String message)  {
-                template.send(new MessageCreator() {
-                    public Message createMessage(Session session) {
-                        return session.createTextMessage(message);
-                    }
-                });
-            }
-        }
-        </code></pre>
-    </section>
-    <section data-markdown>
-        <script type="text/template">
-            ### <span class="code titlemark">MDPs</span>
-            - #### Conecta a uma fila ou tópico de forma assíncrona
-                1. ##### Configurar o Listener Container
-                1. ##### Configurar e injetar a ConnectionFactory
-                2. ##### Anotar o método que processa a mensagem
-                    - ##### <span class="code">@JmsListener</span>
-        </script>
-    </section>
-    <section>
-        <h3 class="titlemark">Exemplo</h3>
-        <pre><code class="java">
-        @Component
-        public class MessageProcessor {
-            ...
-            @JmsListener(destination="in-queue",
-                containerFactory="jmsListenerContainerFactory")
-            public void processMessage(TextMessage message) {
-                System.out.println("Texto Recebido: " + message.getText());
-                ...
-            }
-        }
-        </code></pre>
-    </section>
-    <section data-markdown>
-        <script type="text/template">
-            ### <span class="code titlemark">Configurando a App</span>
-            1. ##### Criar a classe de configuração
-            2. ##### Utilizar as anotações <span class="code">@Configuration</span> e <span class="code">EnableJms</span>
-            3. ##### Realizar o scan nos beans da aplicação: <span class="code">@ComponentScan</span>
-        </script>
-    </section>
-    <section>
-        <h3 class="titlemark">Exemplo</h3>
-        <pre><code class="java" data-trim>
-@Configuration
-@ComponentScan(basePackages="fa7")
-@EnableJms
-public class AppConfig {
-    @Bean
-    public ActiveMQConnectionFactory connectionFactory(){
-        ActiveMQConnectionFactory connectionFactory =
-            new ActiveMQConnectionFactory();
-        connectionFactory.setBrokerURL("tcp://localhost:61616");
-        return connectionFactory;
-    }
-    ...
-    @Bean
-    public DefaultJmsListenerContainerFactory jmsListenerContainerFactory() {
-        DefaultJmsListenerContainerFactory factory =
-            new DefaultJmsListenerContainerFactory();
-        factory.setConnectionFactory(connectionFactory());
-        factory.setConcurrency("1-1");
-        return factory;
-    }
-    ...
-    @Bean
-    public JmsTemplate jmsTemplate(){
-        JmsTemplate template = new JmsTemplate();
-        template.setConnectionFactory(connectionFactory());
-        template.setDefaultDestinationName("out-queue");
-        return template;
-    }
-}
-        </code></pre>
-    </section>
-    <section>
-        <h3 class="titlemark">Importante</h3>
-        <h4>As anotações fazem parte da versão mais recente do Spring. Lembre-se de
-        configurar o projeto Maven adequadamente.</h4>
-    </section>
-</section>
-
